@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+
+%can't define this at the same time as algorithmic and algorithm
+%\usepackage{algorithm2e}
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+\begin{document}
+
+%from algorithm2e package
+% \begin{algorithm}
+% \If{A}{
+% B\;
+% C\;
+% }
+% \end{algorithm}
+
+% % from algorithmic package
+% \begin{algorithmic}
+% \IF{((Neighbor - Lower) $\leq$ QueryPixel) $\& \&$ (Neighbor + Upper) $geq$ QueryPixel )}
+% \STATE Add the query pixel to the region
+% \ENDIF
+% \end{algorithmic}
+
+need algorithmic and algorithm packages
+\begin{algorithm}
+\caption{Test algorithm}
+\label{alg:test}
+\begin{algorithmic}
+\IF{((Neighbor - Lower) $\leq$ QueryPixel) $\& \&$ (Neighbor + Upper) $geq$ QueryPixel )}
+\STATE Add the query pixel to the region
+\ENDIF
+\end{algorithmic}
+\end{algorithm}
+
+The process is shown in Algorithm \ref{alg:test}.
+
+\end{document}

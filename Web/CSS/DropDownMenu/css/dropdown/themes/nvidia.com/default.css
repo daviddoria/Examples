@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/** 
+ * NVIDIA CSS Drop-Down Menu Theme
+ *
+ * @file		default.css
+ * @name		NVIDIA
+ * @version		0.1
+ * @type		transitional
+ * @browsers	Windows: IE6+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ * Module Classes: *.dir {} *.on {} *.open {} li.hover {} li.first {} li.last {}
+ * Expected directory tag - li
+ *
+ */
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Base Drop-Down Styling
+ * @structure	ul (unordered list)
+ *				ul li (list item)
+ *				ul li a (links)
+ *				*(.class|:hover)
+ * @level sep	ul
+ */
+
+
+/* ----- ALL LEVELS (incl. first) */
+
+ul.dropdown {
+ font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+ text-transform: uppercase;
+}
+
+	ul.dropdown li {
+	 padding: 7px 0;
+	 background-color: #000;
+	 color: #fff;
+	 line-height: normal;
+	}
+
+	ul.dropdown li.hover,
+	ul.dropdown li:hover {
+	 
+	}
+
+	ul.dropdown a:link,
+	ul.dropdown a:visited { color: #fff; text-decoration: none; }
+	ul.dropdown a:hover { color: #76b900; text-decoration: none; }
+	ul.dropdown a:active { color: #fff; }
+
+
+/* ----- END LEVEL */
+
+
+	/* ----- NON-FIRST LEVEL */
+
+	ul.dropdown ul {
+	 width: 170px;
+	 background-color: #333;
+	 color: #fff;
+	 font-size: 11px;
+	 text-transform: none;
+	 filter: alpha(opacity=90);
+	 -moz-opacity: .9;
+	 KhtmlOpacity: .9;
+	 opacity: .9;
+	}
+
+		ul.dropdown ul li {
+		 background-color: transparent;
+		 color: #000;
+		 filter: none;
+		}
+
+		ul.dropdown ul li.hover,
+		ul.dropdown ul li:hover {
+		 background-color: transparent;
+		}
+
+		ul.dropdown ul a:link,
+		ul.dropdown ul a:visited { color: #fff; }
+		ul.dropdown ul a:hover { color: #fff; text-decoration: none; }
+		ul.dropdown ul a:active { color: #fff; }
+
+
+/* ----- END LEVEL */
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section	Support Class 'dir'
+ * @level sep	ul, .class
+ */
+
+
+/* ----- ALL LEVELS (incl. first) */
+
+ul.dropdown *.dir {
+ padding-right: 12px;
+ background-image: none;
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+/* ----- END LEVEL */
+
+
+/* Components override */
+

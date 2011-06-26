@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(BinaryThinningImageFilter)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(BinaryThinningImageFilter BinaryThinningImageFilter.cxx)
+TARGET_LINK_LIBRARIES(BinaryThinningImageFilter ${ITK_LIBRARIES})

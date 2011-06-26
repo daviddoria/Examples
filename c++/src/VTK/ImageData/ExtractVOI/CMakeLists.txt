@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+PROJECT(ExtractVOI)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(ExtractVOI ExtractVOI.cxx)
+TARGET_LINK_LIBRARIES(ExtractVOI vtkHybrid)
+

@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\begin{document}
+
+	\lipsum[1]
+
+	\begin{figure}[!ht]
+		\centering
+		
+		\fbox{Test Figure}
+		\caption{Test Caption}
+	\end{figure} 
+	
+	
+	\lipsum[1]
+	\begin{wrapfigure}{r}{40mm}
+		\begin{center}
+			\fbox{Toucan}
+		\end{center}
+		\caption{The Toucan}
+	\end{wrapfigure}
+	\lipsum[2]
+\end{document}

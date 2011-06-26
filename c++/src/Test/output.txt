@@ -1,0 +1,55 @@
+Using built-in specs.
+Target: i586-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i586 --build=i586-redhat-linux
+Thread model: posix
+gcc version 4.4.1 20090725 (Red Hat 4.4.1-2) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-mtune=generic' '-march=i586'
+ /usr/libexec/gcc/i586-redhat-linux/4.4.1/cc1plus -quiet -v -D_GNU_SOURCE Test.cpp -quiet -dumpbase Test.cpp -mtune=generic -march=i586 -auxbase Test -version -o /tmp/ccSIWNeV.s
+ignoring nonexistent directory "/opt/wx/2.8/lib/wx/include/gtk2-ansi-debug-2.8"
+ignoring duplicate directory "/usr/lib/gcc/i586-redhat-linux/4.4.1/../../../../include/c++/4.4.1"
+ignoring duplicate directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib/gcc/i586-redhat-linux/4.4.1/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/i586-redhat-linux/4.4.1/../../../../i586-redhat-linux/include"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/4.4.1
+ /usr/include
+ /usr/local/include
+ /usr/include/c++/3.4.6/
+ /usr/include/c++/3.4.6/backward
+ /opt/wx/2.8/include/wx-2.8
+ /home/doriad/src/glui-2.36/src/include/GL
+ /home/doriad/src/CLAPACK-3.2.1
+ /usr/lib/gcc/i586-redhat-linux/4.4.1/../../../../include/c++/4.4.1/i586-redhat-linux
+ /usr/lib/gcc/i586-redhat-linux/4.4.1/../../../../include/c++/4.4.1/backward
+ /usr/lib/gcc/i586-redhat-linux/4.4.1/include
+End of search list.
+GNU C++ (GCC) version 4.4.1 20090725 (Red Hat 4.4.1-2) (i586-redhat-linux)
+	compiled by GNU C version 4.4.1 20090725 (Red Hat 4.4.1-2), GMP version 4.2.4, MPFR version 2.4.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: e983968af33489f00d517096be08dea1
+In file included from /usr/include/c++/4.4.1/tr1/cstdarg:32,
+                 from /usr/include/stdarg.h:32,
+                 from /usr/include/wchar.h:40,
+                 from /usr/include/c++/4.4.1/cwchar:47,
+                 from /usr/include/c++/4.4.1/bits/postypes.h:42,
+                 from /usr/include/c++/4.4.1/iosfwd:42,
+                 from /usr/include/c++/4.4.1/ios:39,
+                 from /usr/include/c++/4.4.1/ostream:40,
+                 from /usr/include/c++/4.4.1/iostream:40,
+                 from Test.cpp:1:
+/usr/include/c++/4.4.1/cstdarg:56: error: ‘::va_list’ has not been declared
+In file included from /usr/include/c++/4.4.1/cwchar:47,
+                 from /usr/include/c++/4.4.1/bits/postypes.h:42,
+                 from /usr/include/c++/4.4.1/iosfwd:42,
+                 from /usr/include/c++/4.4.1/ios:39,
+                 from /usr/include/c++/4.4.1/ostream:40,
+                 from /usr/include/c++/4.4.1/iostream:40,
+                 from Test.cpp:1:
+/usr/include/wchar.h:612: error: ‘__gnuc_va_list’ has not been declared
+/usr/include/wchar.h:619: error: ‘__gnuc_va_list’ has not been declared
+/usr/include/wchar.h:625: error: ‘__gnuc_va_list’ has not been declared
+/usr/include/wchar.h:689: error: ‘__gnuc_va_list’ has not been declared
+/usr/include/wchar.h:696: error: ‘__gnuc_va_list’ has not been declared
+/usr/include/wchar.h:701: error: ‘__gnuc_va_list’ has not been declared

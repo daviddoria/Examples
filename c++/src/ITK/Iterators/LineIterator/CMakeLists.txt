@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(LineIterator)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(LineIterator LineIterator.cxx)
+TARGET_LINK_LIBRARIES(LineIterator ${ITK_LIBRARIES})

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0081)http://developer.yahoo.com/yui/3/examples/node-menunav/node-menunav-3_source.html -->
+<html class="yui3-js-enabled" id="yui_3_3_0_1_1295207703123108"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>YUI Library Examples: MenuNav Node Plugin</title>
+
+		<link rel="stylesheet" type="text/css" href="./test_files/combo">
+		<link rel="stylesheet" type="text/css" href="./test_files/node-menunav-examples-base.css">
+
+		<script type="text/javascript">
+
+			//	Hide the menu while its dependencies are being loaded
+
+			document.documentElement.className = "yui3-loading";
+		
+		</script>
+
+    <script id="yui_3_3_0_1_12952077031232" type="text/javascript" charset="utf-8" src="./test_files/loader.js"></script><link id="yui_3_3_0_1_12952077031233" type="text/css" rel="stylesheet" href="./test_files/combo(1)" charset="utf-8"><script id="yui_3_3_0_1_12952077031234" type="text/javascript" charset="utf-8" src="./test_files/combo(2)"></script></head>
+    <body class="yui3-skin-sam" id="yui_3_3_0_1_1295207703123107">
+    
+        <div class="yui3-g" id="bd">
+
+            <div class="yui3-u" id="main">
+               <div id="productsandservices" class="yui3-menu yui3-menu-horizontal yui3-menubuttonnav" role="menu">
+                    <div class="yui3-menu-content" role="presentation" id="yui_3_3_0_1_1295207703123106">
+                        <ul class="first-of-type" role="presentation" id="yui_3_3_0_1_1295207703123105">
+                            <li class="yui3-menuitem" role="presentation"><a class="yui3-menuitem-content" href="http://www.yahoo.com/" role="menuitem" tabindex="0" id="yui_3_3_0_1_129520770312378">Home</a></li>
+                            <li role="presentation" id="yui_3_3_0_1_1295207703123104">
+                                <a class="yui3-menu-label" href="http://developer.yahoo.com/yui/3/examples/node-menunav/node-menunav-3_source.html#connect" id="yui_3_3_0_1_129520770312318" role="menuitem" aria-haspopup="true" tabindex="-1"><em>Connect</em></a>
+                                <div id="connect" class="yui3-menu yui3-menu-hidden" role="menu" aria-labelledby="yui_3_3_0_1_129520770312316" aria-hidden="true" style="height: 152px; width: 146px; ">
+                                    <div class="yui3-menu-content" role="presentation">
+                                        <ul role="presentation" class="first-of-type">
+                                            <li class="yui3-menuitem" role="presentation"><a class="yui3-menuitem-content" href="http://developer.yahoo.com/" role="menuitem">Developer Network</a></li>
+                                            <li class="yui3-menuitem" role="presentation"><a class="yui3-menuitem-content" href="http://www.flickr.com/" role="menuitem">Flickr</a></li>
+                                        </ul>	
+                                    </div>
+                                </div>      
+                            </li>
+
+                            <li role="presentation" id="yui_3_3_0_1_1295207703123117">
+                                <a class="yui3-menu-label" href="http://developer.yahoo.com/yui/3/examples/node-menunav/node-menunav-3_source.html#find-info" id="yui_3_3_0_1_129520770312328" role="menuitem" aria-haspopup="true" tabindex="-1"><em>Find Info</em></a>
+                                <div id="find-info" class="yui3-menu yui3-menu-hidden" role="menu" aria-labelledby="yui_3_3_0_1_129520770312326" aria-hidden="true">
+                                    <div class="yui3-menu-content" role="presentation">
+                                        <ul role="presentation" class="first-of-type">
+                                            <li class="yui3-menuitem" role="presentation"><a class="yui3-menuitem-content" href="http://answers.yahoo.com/" role="menuitem">Answers</a></li>
+                                            <li class="yui3-menuitem" role="presentation"><a class="yui3-menuitem-content" href="http://babelfish.yahoo.com/" role="menuitem">Babel Fish Translations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>      
+                            </li>
+
+                        </ul>            
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+    
+<!-- this is required -->
+		<script type="text/javascript" src="./test_files/yui.js"></script>
+
+		<script type="text/javascript">
+
+			//	Call the "use" method, passing in "node-menunav".  This will load the 
+			//	script and CSS for the MenuNav Node Plugin and all of the required 
+			//	dependencies.
+
+			YUI({ filter: 'raw' }).use("node-menunav", function(Y) {
+
+				//	Retrieve the Node instance representing the root menu
+				//	(<div id="productsandservices">) and call the "plug" method
+				//	passing in a reference to the MenuNav Node Plugin.
+
+				var menu = Y.one("#productsandservices");
+
+				menu.plug(Y.Plugin.NodeMenuNav);
+
+				//	Show the menu now that it is ready
+
+				menu.get("ownerDocument").get("documentElement").removeClass("yui3-loading");
+
+			});
+		
+		</script>
+
+    
+
+
+</body></html>

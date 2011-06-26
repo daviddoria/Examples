@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+PROJECT(Glyph2D)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(Glyph2D Glyph2D.cxx)
+TARGET_LINK_LIBRARIES(Glyph2D vtkHybrid)
+

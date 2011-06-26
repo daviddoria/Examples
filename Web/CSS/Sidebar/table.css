@@ -1,0 +1,18 @@
+/* th = table header, td = table data */
+
+table
+{
+width:100%;
+}
+
+th
+{
+height:50px;
+text-align:center;
+}
+
+td
+{
+height:50px;
+text-align:center;
+}

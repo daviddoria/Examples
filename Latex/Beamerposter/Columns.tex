@@ -1,0 +1,35 @@
+  \documentclass[final,hyperref={pdfpagelabels=false}]{beamer} 
+\mode<presentation>{\usetheme{Berlin}} 
+  \usepackage{times}
+  \usepackage{lipsum}
+  \usepackage{amsmath,amssymb}
+  \usepackage[english]{babel}
+  \usepackage[latin1]{inputenc}
+\usepackage{multicol}
+\usepackage[orientation=landscape,size=a0,scale=1.4,debug]{beamerposter}   % e.g. for DIN-A0 poster
+
+  \title[Fancy Posters]{Making Really Fancy Posters with \LaTeX}
+  \author[Dreuw \& Deselaers]{Philippe Dreuw and Thomas Deselaers}
+  \institute[RWTH Aachen University]{Human Language Technology and Pattern Recognition,RWTH Aachen University}
+  \date{Jul. 31th, 2007}
+
+  \begin{document}
+  \begin{frame}{} 
+\maketitle
+\begin{multicols}{3}
+    \vfill
+    \begin{block}{\large Column 1}
+\lipsum[1]
+    \end{block}
+\columnbreak
+
+    \begin{block}{\large Column 2}
+\lipsum[2]
+    \end{block}
+
+    \begin{block}{\large Column 3}
+\lipsum[3]
+    \end{block}
+\end{multicols}
+  \end{frame}
+  \end{document}

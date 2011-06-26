@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\bin\Debug\FilesAndDirectories.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\bin\Debug\FilesAndDirectories.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\bin\Debug\FilesAndDirectories.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\FilesAndDirectories.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\FilesAndDirectories.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\FilesAndDirectories.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\FilesAndDirectories.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\FilesAndDirectories.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\FilesAndDirectories\obj\Debug\FilesAndDirectories.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\FilesAndDirectories.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\FilesAndDirectories.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\FilesAndDirectories.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\bin\Debug\FilesAndDirectories.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\bin\Debug\FilesAndDirectories.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\bin\Debug\FilesAndDirectories.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\FilesAndDirectories.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\FilesAndDirectories.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\FilesAndDirectories\FilesAndDirectories\obj\Debug\FilesAndDirectories.vbproj.GenerateResource.Cache

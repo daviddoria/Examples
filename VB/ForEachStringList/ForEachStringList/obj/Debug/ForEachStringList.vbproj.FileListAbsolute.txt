@@ -1,0 +1,10 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\bin\Debug\ForEachStringList.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\bin\Debug\ForEachStringList.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\bin\Debug\ForEachStringList.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ForEachStringList.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ForEachStringList.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ForEachStringList.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ForEachStringList.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ForEachStringList.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ForEachStringList\obj\Debug\ForEachStringList.pdb

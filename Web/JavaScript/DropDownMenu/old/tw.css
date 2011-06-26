@@ -1,0 +1,121 @@
+ 
+a:link{
+text-decoration: none;
+color: #006699;
+background-color: #ffffff;
+}
+a:active{
+text-decoration: none;
+color: #cc9933;
+background-color: #ffffff;
+}
+a:visited{
+text-decoration: none;
+color: #006699;
+background-color: #ffffff;
+}
+a:hover{
+text-decoration: none;
+color: #cc9933;
+background-color: #ffffff;
+}
+.pagelayout{
+margin-left: 00mm; margin-right: 00mm; margin-top: 00mm; text-align:
+center;
+}
+.heading1{
+color: #003366; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+margin-top: 8mm; margin-bottom: -2mm;
+}
+.heading2{
+color: #003366; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+margin-top: 6mm; margin-bottom: -2mm;
+}
+.heading3{
+color: #003366; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+margin-top: 8mm; margin-bottom: -2mm;
+}
+.heading4{
+color: #003366; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+margin-top: 0mm; margin-bottom: -2mm;
+}
+.heading5{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+margin-top: 2mm; margin-bottom: 2mm;
+}
+blockquote{
+margin-top: 0mm; margin-bottom: 4mm;
+}
+.blockquote1{
+margin-top: -1mm; margin-bottom: -1mm; margin-left: 8mm; margin-right:
+4mm; color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+}
+ul{
+margin-top: -8pt; margin-bottom: -8pt;
+}
+.height1{
+height: 18px;
+}
+.space1{
+margin-top: 3mm; margin-bottom: 3mm;
+}
+.space2{
+margin-top: -4.5mm; margin-bottom: 0mm;
+}
+.pspace1{
+margin-top: -2.5mm; margin-bottom: 0mm;
+}
+.text0{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+margin-top: 0mm; margin-bottom: 0mm;
+}
+.text1{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+}
+.text2{
+color: #003366; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 700;
+margin-top: 8mm; margin-bottom: 0mm;
+}
+.text3{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+}
+.text3a{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+margin-top: 2mm; margin-bottom: 2mm;
+}
+.text3b{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+margin-top: 7mm; margin-bottom: 0mm;
+}
+.text3c{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+margin-top: 7mm; margin-bottom: 3mm;
+}
+.text3d{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+margin-top: 3mm; margin-bottom: 3mm;
+}
+.text4{
+color: #000000; background-color: #ffffff; font-family:
+verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: 500;
+text-decoration: underline;
+}
+.text5{
+color: #000000; background-color: #ffffff; font-family: georgia,serif;
+font-size: 10pt; font-weight: 700;
+}
+ 

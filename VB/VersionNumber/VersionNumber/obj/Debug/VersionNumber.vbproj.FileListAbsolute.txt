@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\bin\Debug\VersionNumber.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\bin\Debug\VersionNumber.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\bin\Debug\VersionNumber.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\VersionNumber.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\VersionNumber.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\VersionNumber.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\VersionNumber.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\VersionNumber.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\VersionNumber\obj\Debug\VersionNumber.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\VersionNumber.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\VersionNumber.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\VersionNumber.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\bin\Debug\VersionNumber.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\bin\Debug\VersionNumber.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\bin\Debug\VersionNumber.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\VersionNumber.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\VersionNumber.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\VersionNumber\VersionNumber\obj\Debug\VersionNumber.vbproj.GenerateResource.Cache

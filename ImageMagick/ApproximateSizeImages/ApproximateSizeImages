@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#this makes all the images in the current directory as close to 600x600  (360000 area) as possible while preserving the aspect ratio
+for i in *.png; do convert $i -resize 360000@ $i; done;
+

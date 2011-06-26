@@ -1,0 +1,22 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="filters">
+   <SourceProxy name="CellDerivatives" class="vtkCellDerivatives" label="CellDerivatives">
+     <Documentation
+        long_help="Create point attribute array by projecting points onto an elevation vector."
+        short_help="Create a point array representing elevation.">
+     </Documentation>
+     <InputProperty
+        name="Input"
+        command="SetInput">
+           <ProxyGroupDomain name="groups">
+             <Group name="sources"/>
+             <Group name="filters"/>
+           </ProxyGroupDomain>
+           <DataTypeDomain name="input_type">
+             <DataType value="vtkDataSet"/>
+           </DataTypeDomain>
+      </InputProperty>
+
+   </SourceProxy>
+ </ProxyGroup>
+</ServerManagerConfiguration>

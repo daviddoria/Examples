@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/** 
+ * MTV.com Ultimate Linear CSS Drop-Down Menu Theme
+ *
+ * @file		default.ultimate.css
+ * @name		MTV.com
+ * @version		0.1
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+@import "default.css";
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Base Style Extension
+ */
+
+ul.dropdown a,
+ul.dropdown span {
+ display: block;
+ padding: 5px 30px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ *	@section	Base Style Override
+ */
+
+
+ul.dropdown li {
+ padding: 0;
+}
+
+ul.dropdown ul a,
+ul.dropdown ul span { /* POI, proposal: override abstract a, span */
+ padding: 8px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Base Style Reinitiate: post-override activities
+ */
+
+
+ul.dropdown *.dir { /* POI */
+ padding: 5px 30px;
+}
+
+ul.dropdown ul *.dir {
+ padding: 8px 30px 8px 8px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ *	@section	Custom Styles
+ */
+
+
+ul.dropdown ul a {
+ width: 133px;
+}
+
+ul.dropdown ul a.dir {
+ width: 111px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------/
+ * @section		Support Class `open` Usage
+ * @source		js, artificial
+ *
+ */
+
+
+ul.dropdown *.open {
+ background-color: #3d3d3d;
+}
+ul.dropdown ul *.open {
+ background-color: #4c4c4c;
+ background-image: url(images/comnav-arrowover.png);
+ color: #fff;
+}
+ul.dropdown ul ul *.open {
+ background-color: #595959;
+ background-image: url(images/comnav-arrowover2.png);
+ color: #fff;
+}
+/* Override UPPER TWO definitions */
+ul.dropdown a.open:hover {
+ background-color: #4698ca;
+ color: #fff;
+}
+ul.dropdown ul a.open:hover {
+ background-image: url(images/comnav-arrowon.png);
+ color: #fff;
+}
+
+
+/* Clone in CSS 2 */
+
+ul.dropdown li:hover > *.dir {
+ background-color: #3d3d3d;
+}
+ul.dropdown ul li:hover > *.dir {
+ background-color: #4c4c4c;
+ background-image: url(images/comnav-arrowover.png);
+}
+ul.dropdown ul ul li:hover > *.dir {
+ background-color: #595959;
+ background-image: url(images/comnav-arrowover2.png);
+ color: #fff;
+}
+
+/* Override UPPER TWO definitions */
+ul.dropdown li:hover > a.dir:hover {
+ background-color: #4698ca;
+ color: #fff;
+}
+ul.dropdown ul li:hover > a.dir:hover {
+ background-image: url(images/comnav-arrowon.png);
+ color: #fff;
+}

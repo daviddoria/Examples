@@ -1,0 +1,11 @@
+\documentclass[10pt,titlepage]{article}
+\usepackage[cc]{titlepic}
+\usepackage{graphicx}
+
+\title{Advisory Panel Recommendations}
+\date{2011}
+\titlepic{\fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}}
+
+\begin{document}
+\maketitle
+\end{document}

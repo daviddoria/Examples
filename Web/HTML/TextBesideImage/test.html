@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Vertical Centering</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			color: #000;
+		}
+		h1, body {
+			background: #fff;
+			padding: 1em 2em;
+		}
+		#container {
+			width: 90%;
+			margin: auto;
+			border: 1px solid #000;
+			overflow: hidden;
+			background: #87BBEB;
+			display: table;
+		}
+			p {
+				width: 50%;
+				display: table-cell;
+				background: #EFEFEF;
+			}
+			#wrapper {
+				display: table-cell;
+				vertical-align: middle;
+			}
+				#middle {
+					background: #222;
+					color: #fff;
+					font-weight: bold;
+				}
+	</style>
+
+	<h1>CSS Vertical Centering</h1>
+
+  <div id="container">
+    <div id="wrapper">
+      <img src="IEEE.gif" style="vertical-align:middle;"/>
+    </div>
+
+    <div id="wrapper">
+      <div id="middle">
+	      I R MIDDLE!!<br>yes<br>i<br>R!!!!<br>foo<br>bar<br>baz<br>beer
+      </div>
+    </div>
+  </div>
+
+</html>

@@ -1,0 +1,5 @@
+<ParaViewReaders>
+  <Reader name="MyReader" extensions="abc"
+	  file_description="Example (.abc) Files">
+  </Reader>
+</ParaViewReaders>

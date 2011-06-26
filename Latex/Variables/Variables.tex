@@ -1,0 +1,19 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{float} % to use [H] placement
+
+\begin{document}
+\section{Test Graphics}
+
+%set a variable
+\def\FigSize{.1}
+
+\begin{figure}[ht!]
+\begin{center}
+\fbox{\rule{0pt}{2in} \rule{\FigSize \linewidth}{0pt}} %use the variable
+\end{center}
+   \caption{Example of caption.}
+\label{fig:SingleFigure1}
+\end{figure}
+
+\end{document}

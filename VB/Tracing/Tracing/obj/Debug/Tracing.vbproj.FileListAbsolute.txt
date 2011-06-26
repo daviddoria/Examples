@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\bin\Debug\Tracing.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\bin\Debug\Tracing.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\bin\Debug\Tracing.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\Tracing.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\Tracing.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\Tracing.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\Tracing.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\Tracing.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Tracing\obj\Debug\Tracing.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\Tracing.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\Tracing.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\Tracing.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\bin\Debug\Tracing.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\bin\Debug\Tracing.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\bin\Debug\Tracing.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\Tracing.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\Tracing.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Tracing\Tracing\obj\Debug\Tracing.vbproj.GenerateResource.Cache

@@ -1,0 +1,18 @@
+Project(KDTree)
+
+FIND_PACKAGE(VXL REQUIRED)
+
+INCLUDE(${VXL_CMAKE_DIR}/UseVXL.cmake)
+INCLUDE_DIRECTORIES(${VXL_RPL_INCLUDE_DIR})
+
+ADD_EXECUTABLE(KDTree KDTree.cpp)
+
+#INCLUDE_DIRECTORIES(
+#/home/doriad/src/vxl/contrib/rpl
+#)
+
+TARGET_LINK_LIBRARIES(KDTree 
+vnl 
+vgl
+rsdl
+)

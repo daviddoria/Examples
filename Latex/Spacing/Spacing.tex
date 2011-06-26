@@ -1,0 +1,19 @@
+\documentclass[10pt]{article}
+
+\usepackage{graphicx}
+
+%\setlength{\textfloatsep}{3in} % space between figures and text - default is 20pt - doesn't seem to do anything??
+\setlength{\belowcaptionskip}{3in} % default is 0pt - works properly
+
+\begin{document}
+
+Some text
+\begin{figure}[!ht]
+	\centering
+	\fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+	\caption{Test Caption}
+\end{figure} 
+
+some more text
+
+\end{document}

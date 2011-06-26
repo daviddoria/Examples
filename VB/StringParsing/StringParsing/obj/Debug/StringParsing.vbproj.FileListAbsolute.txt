@@ -1,0 +1,10 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\bin\Debug\StringParsing.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\bin\Debug\StringParsing.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\bin\Debug\StringParsing.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\StringParsing.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\StringParsing.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\StringParsing.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\StringParsing.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\StringParsing.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringParsing\obj\Debug\StringParsing.pdb

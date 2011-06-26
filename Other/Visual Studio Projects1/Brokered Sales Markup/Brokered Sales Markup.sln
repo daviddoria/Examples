@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Brokered Sales Markup", "Brokered Sales Markup.vbproj", "{D64FFFC1-3348-4574-8E3E-A769AF021F08}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D64FFFC1-3348-4574-8E3E-A769AF021F08}.Debug.ActiveCfg = Debug|.NET
+		{D64FFFC1-3348-4574-8E3E-A769AF021F08}.Debug.Build.0 = Debug|.NET
+		{D64FFFC1-3348-4574-8E3E-A769AF021F08}.Release.ActiveCfg = Release|.NET
+		{D64FFFC1-3348-4574-8E3E-A769AF021F08}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

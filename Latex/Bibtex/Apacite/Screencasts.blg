@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Screencasts.aux
+The style file: apacite.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: Screencasts.bib
+Warning--entry type for "Camtasia" isn't style-file defined
+--line 15 of file Screencasts.bib
+apacite.bst [2009/03/01 v4.05 APA bibliography style]
+You've used 6 entries,
+            6361 wiz_defined-function locations,
+            1212 strings with 10257 characters,
+and the built_in function-call counts, 8461 in all, are:
+= -- 1073
+> -- 50
+< -- 330
++ -- 307
+- -- 10
+* -- 486
+:= -- 1466
+add.period$ -- 22
+call.type$ -- 6
+change.case$ -- 34
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 186
+empty$ -- 428
+format.name$ -- 70
+if$ -- 1711
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 0
+newline$ -- 123
+num.names$ -- 40
+pop$ -- 136
+preamble$ -- 1
+purify$ -- 29
+quote$ -- 0
+skip$ -- 717
+stack$ -- 0
+substring$ -- 340
+swap$ -- 106
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 576
+warning$ -- 0
+while$ -- 34
+width$ -- 0
+write$ -- 136
+(There was 1 warning)

@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+
+Project(MemberFunctionPartialSpecialization)
+
+ADD_EXECUTABLE(MemberFunctionPartialSpecialization MemberFunctionPartialSpecialization.cpp Point.cpp)

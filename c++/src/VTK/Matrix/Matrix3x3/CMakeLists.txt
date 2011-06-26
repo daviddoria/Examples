@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+PROJECT(Matrix3x3)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(Matrix3x3 Matrix3x3.cxx)
+TARGET_LINK_LIBRARIES(Matrix3x3 vtkHybrid)
+

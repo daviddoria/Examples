@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\bin\Debug\ReadWriteFile.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\bin\Debug\ReadWriteFile.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\bin\Debug\ReadWriteFile.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ReadWriteFile.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ReadWriteFile.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ReadWriteFile.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ReadWriteFile.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ReadWriteFile.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ReadWriteFile\obj\Debug\ReadWriteFile.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ReadWriteFile.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ReadWriteFile.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ReadWriteFile.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\bin\Debug\ReadWriteFile.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\bin\Debug\ReadWriteFile.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\bin\Debug\ReadWriteFile.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ReadWriteFile.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ReadWriteFile.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ReadWriteFile\ReadWriteFile\obj\Debug\ReadWriteFile.vbproj.GenerateResource.Cache

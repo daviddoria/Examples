@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(TryCatch)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(TryCatch TryCatch.cxx)
+TARGET_LINK_LIBRARIES(TryCatch ITKIO)

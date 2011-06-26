@@ -1,0 +1,88 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{array,booktabs,dcolumn}
+
+\newcolumntype{d}{D{.}{.}{-4}}
+
+\begin{document}
+
+\begin{table}
+\centering
+\caption{Matlab Concepts and Reinforced Theoretical Course Concept.}
+\begin{center}
+\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} | c | c | c |}
+
+\hline
+Screencast Title & Matlab Topics Covered & Reinforced Course Concepts\\  
+
+\end{tabular*}  
+\end{center}
+
+\end{table}
+
+
+  \begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|d|d|}\cline{2-3}
+      \multicolumn{1}{c|}{}& \multicolumn{1}{c|}{Linear Error} & \multicolumn{1}{c|}{Nonlinear Error} \\ \hline
+      Training & 33.0655 & 13.7276 \\
+      Testing  & 675.1339 & 18.5591 \\ \hline
+    \end{tabular}
+  \end{table}
+
+  \begin{table}[!ht]
+    \centering
+    \begin{tabular}{cdd}\cmidrule[1pt]{2-3}
+      & \multicolumn{1}{c}{Linear Error} & \multicolumn{1}{c}{Nonlinear Error} \\ \midrule[1pt]
+      Training & 33.0655 & 13.7276 \\ \midrule
+      Testing  & 675.1339 & 18.5591 \\ \bottomrule
+    \end{tabular}
+  \end{table}
+
+
+\begin{table}
+\centering
+\caption{Matlab Concepts and Reinforced Theoretical Course Concept.}
+\begin{center}
+\begin{tabular*}{0.8\textwidth}{@{\extracolsep{\fill}} | c | c | c |}
+
+\hline
+Screencast Title & Matlab Topics Covered & Reinforced Course Concepts\\  
+\end{tabular*}  
+\end{center}
+
+\end{table}
+
+%%%%%%%%%%%%%%%%%
+\begin{table}
+\centering
+\caption{Matlab Concepts and Reinforced Theoretical Course Concept.}
+\begin{center}
+\begin{tabular}{| c | c | c |}
+
+\hline
+Screencast Title & Matlab Topics Covered & Reinforced Course Concepts\\  
+\end{tabular}  
+\end{center}
+
+\end{table}
+
+
+The Possible outcomes are shown in Table \ref{tableOutcomes}.
+  \begin{table}[ht!]
+%NOTE: Caption MUST come before label, or \ref{} will show the wrong number!
+    \centering
+	
+    \begin{tabular}{c|c}
+      Outcome & Probability\\ \hline
+      $HH$  & $p^2$\\
+      $HT$  & $p(1-p)$\\
+      $TH$ & $(1-p)p$\\
+      $TT$  & $(1-p)(1-p)$\\
+    \end{tabular}
+\caption{Possible Outcomes}
+\label{tableOutcomes}
+
+  \end{table}
+
+\end{document}

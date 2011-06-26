@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\bin\Debug\TestAddControls.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\bin\Debug\TestAddControls.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\bin\Debug\TestAddControls.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\TestAddControls.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\TestAddControls.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\TestAddControls.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\TestAddControls.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\TestAddControls.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestAddControls\obj\Debug\TestAddControls.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\TestAddControls.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\TestAddControls.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\TestAddControls.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\bin\Debug\TestAddControls.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\bin\Debug\TestAddControls.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\bin\Debug\TestAddControls.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\TestAddControls.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\TestAddControls.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestAddControls\TestAddControls\obj\Debug\TestAddControls.vbproj.GenerateResource.Cache

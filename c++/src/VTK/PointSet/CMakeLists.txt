@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(PointSet)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(PointSet PointSet.cxx)
+TARGET_LINK_LIBRARIES(PointSet vtkHybrid)

@@ -1,0 +1,10 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\bin\Debug\StringReplacement.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\bin\Debug\StringReplacement.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\bin\Debug\StringReplacement.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\StringReplacement.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\StringReplacement.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\StringReplacement.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\StringReplacement.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\StringReplacement.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\StringReplacement\obj\Debug\StringReplacement.pdb

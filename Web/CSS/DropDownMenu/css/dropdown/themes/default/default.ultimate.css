@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/** 
+ * Default Ultimate Linear CSS Drop-Down Menu Theme
+ *
+ * @file		default.ultimate.css
+ * @name		Default
+ * @version		0.1
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+@import "default.css";
+
+
+/*-------------------------------------------------/
+ * @section		Base Style Extension
+ */
+
+ul.dropdown a,
+ul.dropdown span {
+ display: block;
+ padding: 7px 10px;
+}
+
+
+
+/*-------------------------------------------------/
+ * @section		Base Style Override
+ */
+
+ul.dropdown li {
+ padding: 0;
+ border: none;
+}
+
+ul.dropdown ul a,
+ul.dropdown ul span {
+ padding: 8px;
+}
+
+
+
+/*-------------------------------------------------/
+ * @section		Base Style Reinitiate: post-override activities
+ */
+
+
+
+
+
+/*-------------------------------------------------/
+ *	@section	Custom Styles
+ */
+
+ul.dropdown li {
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+ background: url(images/grad2.png) 0 100% repeat-x;
+ color: #000;
+}
+
+ul.dropdown li a:active {
+ background: url(images/grad1.png) repeat-x;
+}
+
+
+/* Non-first level */
+
+ul.dropdown ul {
+ margin-top: 0;
+}
+
+	ul.dropdown ul li {
+	}
+
+	ul.dropdown ul li.hover,
+	ul.dropdown ul li:hover {
+	}
+
+
+
+/* Mixed */
+
+ul.dropdown li a,
+ul.dropdown *.dir {
+ border-style: solid;
+ border-width: 1px 1px 1px 0;
+ border-color: #fff #d9d9d9 #d9d9d9;
+}
+
+
+
+/*-------------------------------------------------/
+ * @section		Support Class `open` Usage
+ * @source		js, artificial
+ *
+ */
+
+ul.dropdown li.hover *.open {
+ border-style: solid;
+ border-width: 1px 1px 1px 0;
+ border-color: #ffa500 #d9d9d9 #d9d9d9;
+ background-color: #fff; 
+ color: #000;
+}
+
+ul.dropdown ul li.hover *.open,
+ul.dropdown-vertical li.hover *.open {
+ padding-left: 15px;
+ border-top-color: #fff;
+ border-left: solid 1px #ffa500;
+}
+
+ul.dropdown-vertical-rtl li.hover *.open {
+ padding-right: 15px;
+ border-right-color: #ffa500;
+ border-left: none;
+}
+
+ul.dropdown-upward li.hover *.open {
+ border-top-color: #fff;
+ border-bottom-color: #ffa500;
+}
+
+ul.dropdown-upward ul li.hover *.open {
+ border-bottom-color: #d9d9d9;
+}
+
+
+	/* CSS2 clone */
+
+	ul.dropdown li:hover > *.dir {
+	 border-style: solid;
+	 border-width: 1px 1px 1px 0;
+	 border-color: #ffa500 #d9d9d9 #d9d9d9;
+	 background-color: #fff; 
+	 color: #000;
+	}
+
+	ul.dropdown ul li:hover > *.dir,
+	ul.dropdown-vertical li:hover > *.dir {
+	 padding-left: 15px;
+	 border-top-color: #fff;
+	 border-left: solid 1px #ffa500;
+	}
+
+	ul.dropdown-vertical-rtl li:hover > *.dir {
+	 padding-right: 15px;
+	 border-right-color: #ffa500;
+	 border-left: none;
+	}
+
+	ul.dropdown-upward li:hover > *.dir {
+	 border-top-color: #fff;
+	 border-bottom-color: #ffa500;
+	}
+
+	ul.dropdown-upward ul li:hover > *.dir {
+	 border-bottom-color: #d9d9d9;
+	}

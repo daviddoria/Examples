@@ -1,0 +1,194 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2008.11.16)  19 APR 2009 14:53
+entering extended mode
+ %&-line parsing enabled.
+**wrapped.tex
+(./wrapped.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2005/11/23 v3.8h The Babel package
+
+(/usr/share/texmf/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2005/11/23 v3.8h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texmf/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) (./wrapped.aux)
+\openout1 = `wrapped.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 21.
+
+(/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 30.
+
+Overfull \hbox (406.50356pt too wide) in paragraph at lines 30--38
+ [] 
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 46--46
+\OT1/ptm/m/n/10 How-ever, the strong breeze will
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 47--47
+[]\OT1/ptm/m/n/10 Cloudy with rain, across many
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 47--47
+\OT1/ptm/m/n/10 north-ern re-gions. Clear spells
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 48--49
+\OT1/ptm/m/n/10 ing. Con-di-tions will im-prove
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 48--49
+\OT1/ptm/m/n/10 by early af-ter-noon and con-tinue
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 86--86
+[]\OT1/ptm/m/n/10 A clear day with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/ptm/m/n/10 lots of sun-shine.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/ptm/m/n/10 breeze will bring
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 86--86
+\OT1/ptm/m/n/10 down the tem-per-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]\OT1/ptm/m/n/10 Cloudy with rain,
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 87--87
+\OT1/ptm/m/n/10 across many north-
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 87--87
+\OT1/ptm/m/n/10 ern re-gions. Clear
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\OT1/ptm/m/n/10 spells across most
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\OT1/ptm/m/n/10 of Scot-land and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+\OT1/ptm/m/n/10 for the morn-ing.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+\OT1/ptm/m/n/10 Con-di-tions will
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+\OT1/ptm/m/n/10 im-prove by early
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 88--89
+\OT1/ptm/m/n/10 af-ter-noon and con-
+ []
+
+[1
+
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./wrapped.aux) ) 
+Here is how much of TeX's memory you used:
+ 576 strings out of 256216
+ 6575 string characters out of 1917065
+ 63852 words of memory out of 1500000
+ 3917 multiletter control sequences out of 10000+200000
+ 12716 words of font info for 31 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 25i,9n,18p,189b,205s stack positions out of 5000i,500n,6000p,200000b,15000s
+{/u
+sr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/urw/ti
+mes/utmr8a.pfb>
+Output written on wrapped.pdf (2 pages, 20318 bytes).
+PDF statistics:
+ 14 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,3 @@
+Add a new row with data in specific columns only:
+insert into TestTable (Gift) VALUES ('Pony');
+

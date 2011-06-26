@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\bin\Debug\ListView.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\bin\Debug\ListView.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\bin\Debug\ListView.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ListView.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ListView.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ListView.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ListView.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ListView.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\ListView\obj\Debug\ListView.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ListView.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ListView.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ListView.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\bin\Debug\ListView.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\bin\Debug\ListView.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\bin\Debug\ListView.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ListView.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ListView.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\ListView\ListView\obj\Debug\ListView.vbproj.GenerateResource.Cache

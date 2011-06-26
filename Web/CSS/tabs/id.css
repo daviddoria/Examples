@@ -1,0 +1,33 @@
+
+p, ol, ul {
+	margin-bottom: 2em;
+	line-height: 200%; /* make the tabs tall */
+}
+
+/* right justify */
+#menu {
+	float: right;
+}
+
+/* tabs in a row */
+#menu li {
+	display: block;
+	float: left;
+	height: 42px;
+}
+
+/* actual tabs */
+#menu a{
+	display: block;
+	padding: 2px 20px 2px 20px;
+	margin-top: 10px;
+	margin-right: 2px;
+	background: #D8DFE6;
+	text-decoration: none;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: #000000;
+}

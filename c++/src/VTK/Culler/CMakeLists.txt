@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+PROJECT(Culler)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(Culler Culler.cxx)
+TARGET_LINK_LIBRARIES(Culler vtkHybrid)
+

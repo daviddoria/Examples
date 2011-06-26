@@ -1,0 +1,28 @@
+  .gradientV{
+/* thanks to http://blog.fakedarren.com/2010/01/cross-browser-css-gradients/ */
+/* and http://www.puremango.co.uk/2010/04/css-gradient/ */
+    /* fallback (Opera) */
+    background: #008800;
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #169fcd, #006597);
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#169fcd), to(#006597));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#169fcd', EndColorStr='#006597', GradientType=0);
+  }
+
+  .background1
+  {
+background: #FF0000;
+padding:10;
+margin:0;
+  }
+
+  .background2
+  {
+background: #FFFF00;
+    margin:9px 9px 9px 9px;
+        padding:10; 
+  }

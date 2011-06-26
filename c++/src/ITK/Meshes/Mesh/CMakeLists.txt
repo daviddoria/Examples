@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Mesh)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+##################
+ADD_EXECUTABLE(Mesh Mesh.cpp)
+TARGET_LINK_LIBRARIES(Mesh ITKIO)
+
+ADD_EXECUTABLE(Read Read.cpp)
+TARGET_LINK_LIBRARIES(Read ITKIO)

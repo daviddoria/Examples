@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(3DArray)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(3DArray 3DArray.cxx)
+TARGET_LINK_LIBRARIES(3DArray vtkInfovis)

@@ -1,0 +1,11 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+
+\begin{document}
+\section{Test Graphics}
+\begin{center}
+%\includegraphics[width=0.4\linewidth]{images/ProbFunction}
+\includegraphics[width=0.4\linewidth]{ProbFunction}
+\end{center}
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass{sciposter}
+				
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[landscape]{geometry}
+\usepackage{subfig}
+\usepackage{verbatim}
+
+%\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{fancybullets}
+
+\newtheorem{Def}{Definition}
+\renewcommand{\titlesize}{\Huge}
+%Change colors like this:
+%\definecolor{Item}{rgb}{R,G,B}
+%example: \definecolor{BoxCol}{rgb}{0.9,0.9,1}
+%items: 
+%BoxCol - \section boxes
+%SectionCol - \section text
+%TextCol - normal text
+%mainCol - background
+
+\definecolor{mainCol}{rgb}{0.0,0.0,0.396} %dark blue
+\definecolor{TextCol}{rgb}{1.0,1.0,1.0} %white
+\definecolor{SectionCol}{rgb}{1.0,0.6,0.0} %orange
+\definecolor{BoxCol}{rgb}{1.0,1.0,1.0} %white
+
+% look into textpos.sty or sectionbox.sty for alternative column environments
+
+\title{Test title}
+
+\author{Test authors}
+
+\institute{Test institute}
+
+
+\setmargins[3cm]
+\setlength{\columnseprule}{1pt}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{5}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Goals}
+do something like in slides - block diagram but with images
+\subsection{Input}
+\begin{itemize}
+	\item Model - triangulated mesh
+	\item One or more LiDAR scans of a scene
+	\item An estimated transformation of the model into the scene
+\end{itemize}
+
+
+\end{multicols}
+\end{document}

@@ -1,0 +1,3 @@
+Project(ClassTemplateInsideNamespace)
+
+ADD_EXECUTABLE(ClassTemplateInsideNamespace ClassTemplateInsideNamespace.cpp)

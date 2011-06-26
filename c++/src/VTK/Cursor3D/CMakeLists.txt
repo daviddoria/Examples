@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Cursor3D)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(Cursor3D Cursor3D.cxx)
+TARGET_LINK_LIBRARIES(Cursor3D vtkHybrid vtkWidgets)

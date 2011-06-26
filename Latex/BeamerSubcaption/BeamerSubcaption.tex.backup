@@ -1,0 +1,121 @@
+\documentclass{beamer}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\begin{document}
+
+\begin{frame}
+\begin{figure}
+  \begin{minipage}[b]{.45\linewidth}
+    \centering
+    \rule{3cm}{1cm}
+    \subcaption{A subfigure}
+    \label{fig:test1a}
+  \end{minipage}%
+  \begin{minipage}[b]{.45\linewidth}
+    \centering
+    \rule{3cm}{1cm}
+    \subcaption{Another subfigure}
+    \label{fig:test1b}
+  \end{minipage}
+  \caption{A figure}
+  \label{fig:test1}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+  \begin{minipage}[b]{.45\linewidth}
+    \centering
+    \rule{3cm}{1cm}
+    \subcaption{Another subfigure}
+    \label{fig:test2a}
+  \end{minipage}%
+  \begin{minipage}[b]{.45\linewidth}
+    \centering
+    \rule{3cm}{1cm}
+    \subcaption{Yet another subfigure}
+    \label{fig:test2b}
+  \end{minipage}
+  \caption{Another figure}
+  \label{fig:test2}
+\end{figure}
+\end{frame}
+
+% \begin{frame}
+%  	\begin{figure}[H]
+% 		
+% 		\begin{subfigure}[b]{.5\linewidth}
+% 			\centering
+% 			\caption{Linear Reconstruction}
+% 			\includegraphics[scale=.4]{r_3d_linear}
+% 		\end{subfigure}
+% 
+% 		\begin{subfigure}[b]{.5\linewidth}
+% 			\centering
+% 			\caption{Nonlinear Reconstruction}
+% 			\includegraphics[scale=.5]{r_3d_nonlinear}
+% 		\end{subfigure}
+% 
+% 
+% 	\end{figure}
+% \end{frame}
+% 
+% \begin{frame}
+%  	\begin{figure}[H]
+% 		
+% 		\begin{subfigure}[b]{.5\linewidth}
+% 			\centering
+% 			\caption{Linear Reconstruction}
+% 			\includegraphics[scale=.4]{r_3d_linear}
+% 		\end{subfigure}
+% 
+% 		\begin{subfigure}[b]{.5\linewidth}
+% 			\centering
+% 			\caption{Nonlinear Reconstruction}
+% 			\includegraphics[scale=.5]{r_3d_nonlinear}
+% 		\end{subfigure}
+% 
+% 
+% 	\end{figure}
+% \end{frame}
+
+\begin{frame}
+ 	\begin{figure}[H]
+		
+		\begin{minipage}[b]{.5\linewidth}
+			\centering
+			\subcaption{Linear Reconstruction}
+			\includegraphics[scale=.4]{r_3d_linear}
+		\end{minipage}
+
+		\begin{minipage}[b]{.5\linewidth}
+			\centering
+			\subcaption{Nonlinear Reconstruction}
+			\includegraphics[scale=.5]{r_3d_nonlinear}
+		\end{minipage}
+
+
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+ 	\begin{figure}[H]
+		
+		\begin{minipage}[b]{.5\linewidth}
+			\centering
+			\subcaption{Linear Reconstruction}
+			\includegraphics[scale=.4]{r_3d_linear}
+		\end{minipage}
+
+		\begin{minipage}[b]{.5\linewidth}
+			\centering
+			\subcaption{Nonlinear Reconstruction}
+			\includegraphics[scale=.5]{r_3d_nonlinear}
+		\end{minipage}
+
+
+	\end{figure}
+\end{frame}
+
+\end{document} 

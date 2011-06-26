@@ -1,0 +1,275 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.11)  11 APR 2009 12:30
+entering extended mode
+ %&-line parsing enabled.
+**AnimatedImages.tex
+(./AnimatedImages.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2008/10/06 PDF animations from files and inline graphics
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2007/12/12 v1.6 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2008/08/11 v1.3 Switch for option draft (HO)
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/animate/animfp.sty
+Package: animfp 2008/07/18 fixed point addition for animate.sty
+\afp@xs=\count90
+\afp@xia=\count91
+\afp@xib=\count92
+\afp@xfa=\count93
+\afp@xfb=\count94
+\afp@rega=\count95
+\afp@regb=\count96
+\afp@regs=\count97
+)
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count98
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count99
+\nofMParguments=\count100
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count101
+\MPscratchDim=\dimen106
+\MPnumerator=\count102
+\everyMPtoPDFconversion=\toks16
+)
+\@anim@@fields=\count103
+\@anim@@ocgs=\count104
+\@anim@@posterocgs=\count105
+\@anim@box=\box27
+\@anim@tmpdima=\dimen107
+\@anim@tmpdimb=\dimen108
+\@anim@num=\count106
+\@anim@curframe=\count107
+\@anim@curframe@zb=\count108
+\@anim@resize=\count109
+\@anim@skipfram=\count110
+\@anim@mulframecnt=\count111
+\@anim@@tmlnfile=\read1
+\@anim@tmpcnt=\count112
+\@anim@curlayer=\count113
+\@anim@lineno=\count114
+\@anim@begin=\toks17
+\@anim@end=\toks18
+) (./AnimatedImages.aux)
+\openout1 = `AnimatedImages.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+! Arithmetic overflow.
+\calc@next@digit ... \multiply \calc@numerator 10 
+                                                  \calc@Acount \calc@numerat...
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't carry out that multiplication or division,
+since the result is out of range.
+
+ <./1.jpg>
+! Dimension too large.
+<recently read> \unitlength 
+                            
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+ <./2.jpg>
+! Dimension too large.
+<recently read> \unitlength 
+                            
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+ <./3.jpg>
+! Dimension too large.
+<recently read> \unitlength 
+                            
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+ <./4.jpg>
+! Dimension too large.
+<recently read> \unitlength 
+                            
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+
+
+pdfTeX warning: pdflatex: arithmetic: number too big
+ <./5.jpg>
+! Dimension too large.
+<recently read> \unitlength 
+                            
+l.9 ...s[width=0.4\linewidth, controls]{1}{}{1}{5}
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+[1{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./AnimatedImages.aux) ) 
+Here is how much of TeX's memory you used:
+ 1132 strings out of 493876
+ 16257 string characters out of 1150567
+ 76065 words of memory out of 3000000
+ 4450 multiletter control sequences out of 10000+50000
+ 3640 words of font info for 14 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 23i,4n,23p,161b,178s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky
+/cm/cmr10.pfb>
+Output written on AnimatedImages.pdf (1 page, 675831 bytes).
+PDF statistics:
+ 71 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+

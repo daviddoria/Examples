@@ -1,0 +1,127 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{%
+Allison~Carr%
+}{%
+Allison~Carr%
+}{%
+{\protect\APACyear{2009}}%
+}]{%
+ReferenceTool}%
+\APACinsertmetastar{%
+ReferenceTool}%
+Allison~Carr, P\BPBI L.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{More than words: screencasting as a reference tool}{More
+  than words: screencasting as a reference tool}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Reference Services Review}{37}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+\APACcitebtitle{Camtasia Website}}{%
+\APACcitebtitle{Camtasia Website}}{%
+{\protect\APACyear{{\protect\bibnodate{}}}}%
+}]{%
+Camtasia}%
+\APACinsertmetastar{%
+Camtasia}%
+\APACrefbtitle{Camtasia Website.}{Camtasia website.}
+\newblock
+\APACrefYearMonthDay{\bibnodate{}}{}{}.
+\newblock
+ \begin{APACrefURL} \url{http://www.techsmith.com/camtasia/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Notess%
+}{%
+Notess%
+}{%
+{\protect\APACyear{2005}}%
+}]{%
+Screencasts}%
+\APACinsertmetastar{%
+Screencasts}%
+Notess, G\BPBI R.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{November}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Casting the Net: podcasting and screencasting}{Casting
+  the net: podcasting and screencasting}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{``Online'' Magazine}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Peterson%
+}{%
+Peterson%
+}{%
+{\protect\APACyear{2007}}%
+}]{%
+Library}%
+\APACinsertmetastar{%
+Library}%
+Peterson, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{November}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Incorporating Screencasts In Online
+  Teaching}{Incorporating screencasts in online teaching}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{The International Review of Research in Open and
+  Distance Learning}{8}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Peterson%
+}{%
+Peterson%
+}{%
+{\protect\APACyear{2008}}%
+}]{%
+MaterialScience}%
+\APACinsertmetastar{%
+MaterialScience}%
+Peterson, E.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{December}{}.
+\newblock
+
+\newblock
+\APACjournalVolNumPages{Frontiers in Education Conference}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Posnick-Goodwin%
+}{%
+Posnick-Goodwin%
+}{%
+{\protect\APACyear{2010}}%
+}]{%
+GenerationZ}%
+\APACinsertmetastar{%
+GenerationZ}%
+Posnick-Goodwin, S.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{February}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Meet generation Z}{Meet generation z}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{California Teachers Association}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

@@ -1,0 +1,15 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{enumerate}
+
+\begin{document}
+\begin{enumerate}[a)]
+\item If the data is linearly separable, show that for some $w$, $y_n(w^T x_n)\geq 1$ for $n = 1, ... N$.
+\item Formulate the task of finding a separator $w$ for separable data as a linear program.
+\item If the data is not separable, the condition in (a) cannot hold for every n. Thus introduce the violation $\zeta_n \geq$ to capture the amount of violation for example $x_n$. So, for $n=1... N$, $y_n(w^T x_n) \geq 1-\zeta_n$, $\zeta_n \geq 0$.
+We want to minimize the ``amount of violation''. One choice is to minimize $\sum_{n=1}^N \zeta_n$, i.e. we wish to find $w$ which solves: Minimze $\sum_{n=1}^N \zeta_n$ s.t. $y_n(w^T x_n) \geq 1 - \zeta_n$, $\zeta_n \geq 0$, where the inequalities hold for $n=1...N$. Formulate this as a linear program.
+\end{enumerate}
+
+
+
+\end{document}

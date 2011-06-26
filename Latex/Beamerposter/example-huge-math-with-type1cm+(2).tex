@@ -1,0 +1,52 @@
+\documentclass[final]{beamer}
+  \mode<presentation>
+  {
+% you can chose your theme here:
+%  \usetheme{Aachen}
+%  \usetheme{I6dv}
+%  \usetheme{I6pd}
+  \usetheme{I6pd2}
+%  \usetheme{I6td}
+%  \usetheme{Oldi6}
+}
+  %\usepackage{calc} 
+  %\usepackage{times}
+  \usepackage{sfmath}            % for sans serif math fonts; wget http://dtrx.de/od/tex/sfmath.sty
+  \usepackage{amsmath,amsthm, amssymb, latexsym}
+  %\boldmath
+
+  \usepackage[english]{babel}
+  \usepackage[latin1]{inputenc}
+  \usepackage[orientation=landscape,size=custom,width=200,height=120,scale=4,debug]{beamerposter}
+  \graphicspath{{figures/}}
+  \title[Fancy Posters]{Making Really Fancy Posters with \LaTeX and $\mathcal{M}\alpha_{t}\mbox{h}$ Symbols}
+  \author[Dreuw \& Deselaers]{Philippe Dreuw and Thomas Deselaers}
+  \institute[RWTH Aachen University]{Human Language Technology and Pattern Recognition,RWTH Aachen University}
+  \newcommand{\footlinetext}{Lehrstuhl f\"ur Informatik 6 - Computer Science Department - RWTH Aachen University - Aachen, Germany \par Mail: \texttt{<surname>@cs.rwth-aachen.de} \hfill WWW: \texttt{http://www-i6.informatik.rwth-aachen.de}\vskip1ex}
+  \date{Jul. 31th, 2007}
+
+  \begin{document}
+  \begin{frame}{} 
+    \vfill
+    \begin{block}{Huge Math Fonts}
+        \Huge %
+        \begin{equation}
+          \sum_{e=1}^E\exp(e) \ne E=mc^2
+        \end{equation}        
+    \end{block}
+    \vfill
+    \begin{block}{Large Pi Fonts}
+      \Large %
+      $\mathit{\Pi}$ $\mathsf{\Pi}$ $\mathtt{\Pi}$ $\mathcal{\Pi}$ $\Pi$
+    \end{block}
+    \vfill
+  \end{frame}
+\end{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% End:

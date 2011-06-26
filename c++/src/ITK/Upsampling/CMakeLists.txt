@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Upsampling)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(Upsampling Upsampling.cxx)
+TARGET_LINK_LIBRARIES(Upsampling ${ITK_LIBRARIES})
+

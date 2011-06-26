@@ -1,0 +1,19 @@
+%\documentclass[10pt]{article}
+
+\documentclass{beamer}
+\usetheme{Berkeley}
+\usepackage{textpos}
+\begin{document}
+
+	\begin{frame}
+		\begin{textblock}{.5*\textwidth}(0,0)
+			\includegraphics[width=0.25\textwidth]{Scanner}
+		\end{textblock}
+
+		\begin{itemize}
+			\item Text1\pause
+			\item Text2
+		\end{itemize}
+	\end{frame}
+
+\end{document}

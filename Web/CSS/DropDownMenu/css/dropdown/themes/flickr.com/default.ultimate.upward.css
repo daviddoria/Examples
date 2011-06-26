@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/** 
+ * Flickr Ultimate Upward CSS Drop-Down Menu Theme
+ *
+ * @file		default.ultimate.upward.css
+ * @name		Flickr
+ * @version		beta
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+@import "default.ultimate.css";
+
+ul.dropdown {
+ padding: 1px 0 0;
+ background-position: 0 0;
+}
+
+	ul.dropdown li.divider {
+	 border-top: none;
+	 border-bottom: solid 1px #e5e5e5;
+	}
+
+	ul.dropdown ul {
+	 border-color: #666 #666 #f0f0f0 #f0f0f0;
+	}
+
+
+
+
+/* Mixed */
+
+ul.dropdown li a,
+ul.dropdown *.dir {
+ border-width: 0 1px 1px;
+}
+
+
+
+ul.dropdown li.hover *.open {
+ margin: -1px 0 0;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ border-color: #f0f0f0 #666 #f0f0f0  #f0f0f0;
+}
+
+ul.dropdown ul li.hover *.open {
+ padding-top: 4px;
+ border: none;
+}
+
+
+	/* CSS2 clone */
+
+	ul.dropdown li:hover > *.dir {
+	 margin: -1px 0 0;
+	 padding-top: 5px;
+	 padding-bottom: 5px;
+	 border-color: #f0f0f0 #666 #f0f0f0  #f0f0f0;
+	}
+
+	ul.dropdown ul li:hover > *.dir {
+	 padding-top: 4px;
+	 border: none;
+	}

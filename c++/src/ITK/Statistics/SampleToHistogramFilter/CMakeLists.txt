@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(SampleToHistogramFilter)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(SampleToHistogramFilter_1D SampleToHistogramFilter_1D.cxx)
+TARGET_LINK_LIBRARIES(SampleToHistogramFilter_1D
+ITKBasicFilters ITKCommon ITKIO ITKStatistics)
+
+ADD_EXECUTABLE(SampleToHistogramFilter_2D SampleToHistogramFilter_2D.cxx)
+TARGET_LINK_LIBRARIES(SampleToHistogramFilter_2D
+ITKBasicFilters ITKCommon ITKIO ITKStatistics)
+
+ADD_EXECUTABLE(SampleToHistogramFilter_3D SampleToHistogramFilter_3D.cxx)
+TARGET_LINK_LIBRARIES(SampleToHistogramFilter_3D
+ITKBasicFilters ITKCommon ITKIO ITKStatistics)
+
+
+ADD_EXECUTABLE(ResetSamplesBug ResetSamplesBug.cxx)
+TARGET_LINK_LIBRARIES(ResetSamplesBug
+ITKBasicFilters ITKCommon ITKIO ITKStatistics)

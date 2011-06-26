@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\bin\Debug\Inheritance.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\bin\Debug\Inheritance.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\bin\Debug\Inheritance.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\Inheritance.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\Inheritance.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\Inheritance.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\Inheritance.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\Inheritance.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Inheritance\obj\Debug\Inheritance.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\Inheritance.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\bin\Debug\Inheritance.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\Inheritance.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\Inheritance.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Inheritance\Inheritance\obj\Debug\Inheritance.vbproj.GenerateResource.Cache

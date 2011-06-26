@@ -1,0 +1,11 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\bin\Debug\CloseMessageBox.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\bin\Debug\CloseMessageBox.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\bin\Debug\CloseMessageBox.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.frmMessage.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\CloseMessageBox\obj\Debug\CloseMessageBox.pdb

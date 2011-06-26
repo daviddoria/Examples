@@ -1,0 +1,10 @@
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\bin\Debug\Test.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\bin\Debug\Test.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\bin\Debug\Test.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\Test.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\Test.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\Test.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\Test.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\Test.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Test\Test\obj\Debug\Test.pdb

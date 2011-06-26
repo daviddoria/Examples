@@ -1,0 +1,23 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{array}
+
+\begin{document}
+
+\begin{table}[h]
+	\centering
+%	\begin{tabular}{c|c|c|c|c}
+%\begin{tabular}{m{1in}|m{1in}|m{1in}|m{1in}|m{1in}}
+\begin{tabular}{>{\centering\arraybackslash}m{.1\linewidth}|>{\centering\arraybackslash}m{.1\linewidth}|>{\centering\arraybackslash}m{.1\linewidth}|>{\centering\arraybackslash}m{.1\linewidth}|>{\centering\arraybackslash}m{.6\linewidth}}
+
+		Position & ICP Mean Distance & Confidence & Consistency & Image\\ \hline
+		Correct & 0.057 & 0.579 & 0.589 & \fbox{\rule{0pt}{2in} \rule{2in}{0pt}} \\ \hline
+		Incorrect & 0.094 & 0.252 & 0.077 & \fbox{\rule{0pt}{2in} \rule{2in}{0pt}}\\ \hline
+	\end{tabular}
+	\caption{Test.}
+	\label{tbl:2carsValues}
+\end{table}
+
+
+\end{document}
+

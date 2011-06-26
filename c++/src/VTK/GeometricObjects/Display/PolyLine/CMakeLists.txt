@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(PolyLine)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(PolyLine PolyLine.cxx)
+TARGET_LINK_LIBRARIES(PolyLine vtkHybrid)
+

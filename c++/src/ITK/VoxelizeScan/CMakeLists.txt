@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(VoxelizeScan)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(VoxelizeScan VoxelizeScan.cpp)
+TARGET_LINK_LIBRARIES(VoxelizeScan
+vtkHybrid 
+#ITKNumerics
+ITKIO
+)
+
+ADD_EXECUTABLE(Good Good.cpp)
+TARGET_LINK_LIBRARIES(Good
+vtkHybrid 
+ITKIO
+)
+
+ADD_EXECUTABLE(Bad Bad.cpp)
+TARGET_LINK_LIBRARIES(Bad
+vtkHybrid 
+ITKIO
+)

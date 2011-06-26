@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="100" height="60">
+  <path d="M 30,40 A 30,20 20 0,0 70,20 A 30,20 20 1,0 30,40 Z "/>
+</svg>

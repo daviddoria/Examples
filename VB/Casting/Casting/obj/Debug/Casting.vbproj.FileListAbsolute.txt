@@ -1,0 +1,13 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\bin\Debug\Casting.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\bin\Debug\Casting.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\bin\Debug\Casting.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\Casting.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\Casting.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\Casting.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\Casting.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\Casting.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\Casting\obj\Debug\Casting.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Casting\Casting\obj\Debug\Casting.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Casting\Casting\obj\Debug\Casting.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\Casting\Casting\obj\Debug\Casting.pdb

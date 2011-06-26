@@ -1,0 +1,10 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\bin\Debug\KeyCapture.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\bin\Debug\KeyCapture.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\bin\Debug\KeyCapture.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\KeyCapture.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\KeyCapture.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\KeyCapture.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\KeyCapture.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\KeyCapture.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\KeyCapture\obj\Debug\KeyCapture.pdb

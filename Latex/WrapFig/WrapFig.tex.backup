@@ -1,0 +1,12 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{graphicsx}
+
+\begin{document}
+
+\lipsum[1]
+
+\end{document}

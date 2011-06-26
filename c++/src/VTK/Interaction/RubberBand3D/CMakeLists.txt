@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(RubberBand3D)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(RubberBand3D RubberBand3D.cxx)
+TARGET_LINK_LIBRARIES(RubberBand3D vtkHybrid)

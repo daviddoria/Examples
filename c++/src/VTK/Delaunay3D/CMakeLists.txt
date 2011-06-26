@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Delaunay3D)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(Delaunay3D Delaunay3D.cxx)
+TARGET_LINK_LIBRARIES(Delaunay3D vtkHybrid)

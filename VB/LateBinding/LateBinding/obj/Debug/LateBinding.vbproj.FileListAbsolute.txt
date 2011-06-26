@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\bin\Debug\LateBinding.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\bin\Debug\LateBinding.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\bin\Debug\LateBinding.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\LateBinding.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\LateBinding.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\LateBinding.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\LateBinding.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\LateBinding.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\LateBinding\obj\Debug\LateBinding.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\LateBinding.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\LateBinding.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\LateBinding.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\bin\Debug\LateBinding.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\bin\Debug\LateBinding.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\bin\Debug\LateBinding.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\LateBinding.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\LateBinding.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\LateBinding\LateBinding\obj\Debug\LateBinding.vbproj.GenerateResource.Cache

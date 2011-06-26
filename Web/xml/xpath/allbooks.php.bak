@@ -1,0 +1,15 @@
+<?php
+$xml = simplexml_load_file("bookstore.xml");
+
+echo $xml->getName() . "<br />";
+
+foreach($xml->children() as $child)
+  {
+  foreach($child->children() as $subchild)
+    {
+    echo $subchild->getName() . ": " . $subchild . "<br />";
+    echo "<a href=" . $subchild->getName() . ">" . $subchild . "</a>";
+
+    }
+  }
+?>

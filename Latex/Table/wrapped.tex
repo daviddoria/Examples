@@ -1,0 +1,94 @@
+% wrapped.tex - illustrating how to specify the size of the table
+% columns.
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article} 
+
+%The Babel package adds multi-lingual support to Latex.  In particular,
+%text that Latex automatically inserts, like dates, or section headings
+%must be configured to the native language of the document.  The default
+%is American. 
+
+%The reason for adding babel in this instance seems silly, considering
+%it is essentially the same language.  However, it also dictates the
+%formatting of dates, which is different between us and the US. Adding
+%the optional argument 'english' in the documentclass command, as well
+%as invoking the babel package will recitfy the issue.
+\usepackage{babel}
+\usepackage{times}
+
+\begin{document}
+
+\title{Latex Tutorials 4 (Tables) Examples \\Taking control of your tables}
+\author{Andrew Roberts}
+\maketitle
+
+Without specifying width for last column:
+
+\begin{center}
+	\begin{tabular}{ | l | l | l | l |}
+	\hline
+	Day & Min Temp & Max Temp & Summary \\ \hline
+	Monday & 11C & 22C & A clear day with lots of sunshine.  However, the strong breeze will bring down the temperatures. \\ \hline
+	Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells across most of Scotland and Northern Ireland, but rain reaching the far northwest. \\ \hline
+	Wednesday & 10C & 21C & Rain will still linger for the morning. Conditions will improve by early afternoon and continue throughout the evening. \\
+	\hline
+	\end{tabular}
+\end{center}
+
+With width specified:
+
+\begin{center}
+	\begin{tabular}{ | l | l | l | p{5cm} |}
+	\hline
+	Day & Min Temp & Max Temp & Summary \\ \hline
+	Monday & 11C & 22C & A clear day with lots of sunshine.  However, the strong breeze will bring down the temperatures. \\ \hline
+	Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells across most of Scotland and Northern Ireland, but rain reaching the far northwest. \\ \hline
+	Wednesday & 10C & 21C & Rain will still linger for the morning. Conditions will improve by early afternoon and continue throughout the evening. \\
+	\hline
+	\end{tabular}
+\end{center}
+
+\tiny
+\begin{center}
+	\begin{tabular}{ | l | l | l | p{5cm} |}
+	\hline
+	Day & Min Temp & Max Temp & Summary \\ \hline
+	Monday & 11C & 22C & A clear day with lots of sunshine.  However, the strong breeze will bring down the temperatures. \\ \hline
+	Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells across most of Scotland and Northern Ireland, but rain reaching the far northwest. \\ \hline
+	Wednesday & 10C & 21C & Rain will still linger for the morning. Conditions will improve by early afternoon and continue throughout the evening. \\
+	\hline
+	\end{tabular}
+\end{center}
+
+\normalsize
+
+
+\begin{table}
+\tiny
+	\begin{tabular}{ | l | l | l | p{5cm} |}
+	\hline
+	Day & Min Temp & Max Temp & Summary \\ \hline
+	Monday & 11C & 22C & A clear day with lots of sunshine.  However, the strong breeze will bring down the temperatures. \\ \hline
+	Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells across most of Scotland and Northern Ireland, but rain reaching the far northwest. \\ \hline
+	Wednesday & 10C & 21C & Rain will still linger for the morning. Conditions will improve by early afternoon and continue throughout the evening. \\
+	\hline
+	\end{tabular}
+\end{table}
+
+\normalsize
+
+\begin{center}
+	\begin{tabular}{ | l | l | l | p{3cm} |}
+	\hline
+	Day & Min Temp & Max Temp & Summary \\ \hline
+	Monday & 11C & 22C & A clear day with lots of sunshine.  However, the strong breeze will bring down the temperatures. \\ \hline
+	Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells across most of Scotland and Northern Ireland, but rain reaching the far northwest. \\ \hline
+	Wednesday & 10C & 21C & Rain will still linger for the morning. Conditions will improve by early afternoon and continue throughout the evening. \\
+	\hline
+	\end{tabular}
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,16 @@
+
+* { margin: 0; padding: 0; }
+body { padding: 50px; background: #4c4c4c url(images/grad1.png) 0 0 repeat-x; color: #d9d9d9; font: 14px/normal Tahoma, Arial, Helvetica, sans-serif; }
+h1 { margin-bottom: .5em; border-bottom: solid 1px #d9d9d9; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 180%; text-indent: 5px; letter-spacing: -1px; }
+cite { float: right; }
+ul.classic { list-style: disc; margin-bottom: 1em; padding-left: 2em; }
+div.section { clear: both; padding-top: 50px; }
+
+.table1 { float: right; margin-bottom: 2em; border: solid 1px #eee; }
+.table1 caption { color: #fff; text-align: center; padding-bottom: 5px; }
+.table1 th, .table1 td { padding: 7px; }
+.table1 th, .table1 thead td { background-color: lightyellow; color: #000; }
+.table1 tbody td { background-color: #fff; color: #000; }
+.table1 tbody th { text-align: right; }
+
+* html ul.dropdown ul { background-image: url(images/dropdown_pane_8bit.png); }

@@ -1,0 +1,35 @@
+\documentclass{beamer}
+\usetheme{Berkeley}
+
+\begin{document}
+
+\begin{frame}
+Initial text\\
+\only<1>{hello}
+\only<2>{Slide 2}
+\only<3-4>{Slide 3}
+\only<4>{Slide 4}
+
+\pause
+Final text
+\end{frame}
+
+
+\begin{frame}
+	\begin{overlayarea}{\textwidth}{3cm}	
+		\begin{align*}
+			\only<1>{x &= 3}
+			\only<2>{yz &= 4}
+		\end{align*}
+\end{overlayarea}
+		
+\end{frame}
+
+\begin{frame}
+	\begin{align*}
+		x &= 3\\
+		yz &= 4
+	\end{align*}
+\end{frame}
+
+\end{document} 

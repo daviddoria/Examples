@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+/** 
+ * Vimeo.com CSS Drop-Down Menu Theme
+ *
+ * @file		default.css
+ * @name		Vimeo
+ * @version		beta
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera9+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2009 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+
+/*-------------------------------------------------/
+ * @section		Base Drop-Down Styling
+ */
+
+
+ul.dropdown {
+ background: transparent url(images/box1-bottom-left.png) 0 100% no-repeat;
+ font: normal 14px/normal Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+	ul.dropdown li {
+	 padding: 5px 10px;
+	 background-color: #172322;
+	 color: #fff;
+	 line-height: 22px;
+	 white-space: nowrap;
+	}
+
+	ul.dropdown li.first {
+	 padding-left: 15px;
+	 background: transparent url(images/box1-bottom2.png) 0 100% no-repeat;
+	}
+
+	ul.dropdown li.last {
+	 padding-right: 15px;
+	 background: transparent url(images/box1-bottom2.png) 100% 100% no-repeat;
+	}
+
+	ul.dropdown li.hover,
+	ul.dropdown li:hover {
+	 color: #b0d730;
+	}
+
+	ul.dropdown a:link,
+	ul.dropdown a:visited	{ color: #fff; text-decoration: none; }
+	ul.dropdown a:hover		{ color: #b0d730; }
+	ul.dropdown a:active	{ color: #0395cc; }
+
+
+	/* -- level mark -- */
+
+	ul.dropdown ul {
+	 left: -21px;
+	 width: 150px;
+	 padding: 0 16px;
+	 background: url(images/box1-top.png) 50% 0 no-repeat;
+	}
+
+	ul.dropdown li.last ul {
+	 left: auto;
+	 right: 16px;
+	}
+
+		ul.dropdown ul li {
+		 height: auto;
+		 padding: 5px 15px;
+		 line-height: 1.3em;
+		 white-space: normal;
+		}
+
+		ul.dropdown ul li.first {
+		 padding-left: 0;
+		 background: #172322;
+		}
+
+		ul.dropdown ul li.last {
+		 padding-bottom: 10px;
+		 background: transparent url(images/box1-bottom.png) 50% 100% no-repeat;
+		}
+
+		ul.dropdown ul li.first ul {
+		 top: 0;
+		 padding: 0 16px 0 0;
+		 background-image: url(images/box1-outwards-top-right.png);
+		}
+
+		ul.dropdown ul li.first li.first {
+		 background-image: none;
+		}
+
+		ul.dropdown ul li.last {
+		 padding-right: 0;
+		}
+
+		ul.dropdown ul li.last ul {
+		 left: 100%;
+		 right: auto;
+		 top: -16px;
+		}
+
+		/* -- level mark -- */
+
+		ul.dropdown ul ul {
+		 top: -12px;
+		 left: 100%;
+		 padding: 16px 0 0;
+		 background: transparent url(images/box1-top-left.png) 0 0 no-repeat;
+		}
+
+			ul.dropdown ul ul li.first {
+			 padding-top: 10px;
+			 background: #172322 url(images/box1-top-right.png) 100% 0 no-repeat;
+			}
+
+
+/*-------------------------------------------------/
+ * @section		Search Form
+ */
+
+ul.dropdown form * {
+ display: inline;
+ float: left;
+}
+
+ul.dropdown form label {
+ display: none;
+}
+
+ul.dropdown form input.text {
+ width: 143px;
+ height: 18px;
+ padding: 2px 25px 2px 5px;
+ border-width: 0;
+ background: transparent url(images/bg_search-field.png) 0 0 no-repeat;
+ color: #969696;
+ font: normal 14px/17px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+ vertical-align: middle;
+}
+
+ul.dropdown form input.text:focus {
+ outline: none;
+}
+
+ul.dropdown form input.button {
+ position: relative;
+ margin: 4px 0 0 -20px;
+}
+
+
+/*-------------------------------------------------/
+ * @section		Support Class `dir`
+ */
+
+
+ul.dropdown *.dir {
+ padding-right: 20px;
+ background-image: url(images/nav-arrow-down.png);
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+
+/* -- Components override -- */
+
+ul.dropdown-horizontal ul *.dir {
+ padding-right: 15px;
+ background-image: url(images/nav-arrow-right.png);
+ background-position: 95% 50%;
+ background-repeat: no-repeat;
+}

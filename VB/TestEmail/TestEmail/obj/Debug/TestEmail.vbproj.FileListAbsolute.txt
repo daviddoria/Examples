@@ -1,0 +1,23 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\bin\Debug\TestEmail.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\bin\Debug\TestEmail.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\bin\Debug\TestEmail.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\TestEmail.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\TestEmail.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\TestEmail.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\TestEmail.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\TestEmail.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestEmail\obj\Debug\TestEmail.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\TestEmail.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\TestEmail.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\TestEmail.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\bin\Debug\TestEmail.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\bin\Debug\TestEmail.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\bin\Debug\TestEmail.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\TestEmail.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\TestEmail.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestEmail\TestEmail\obj\Debug\TestEmail.vbproj.GenerateResource.Cache
+F:\Examples\VB\TestEmail\TestEmail\obj\Debug\TestEmail.exe
+F:\Examples\VB\TestEmail\TestEmail\obj\Debug\TestEmail.xml
+F:\Examples\VB\TestEmail\TestEmail\obj\Debug\TestEmail.pdb

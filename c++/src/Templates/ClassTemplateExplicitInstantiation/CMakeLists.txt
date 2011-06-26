@@ -1,0 +1,3 @@
+Project(ClassTemplateExplicitInstantiation)
+
+ADD_EXECUTABLE(ClassTemplateExplicitInstantiation ClassTemplateExplicitInstantiation.cpp Point.cpp)

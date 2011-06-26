@@ -1,0 +1,120 @@
+// g++ snapshot.cpp -I/usr/include/Qt -I/usr/include/kde -I/usr/lib/qt-3.3/include/qcstring.h
+
+//#include <iostream>
+//#include <qlabel.h>
+//#include <qpixmap.h>
+//#include <qapplication.h>
+//#include <qpainter.h>
+//#include <qpalette.h>
+//#include <qstyle.h>
+//#include <qtimer.h>
+//#include <qtooltip.h>
+//#include <qevent.h>
+//#include <kimageio.h>
+//#include <ksavefile.h>
+//#include <ktempfile.h>
+//#include <qbitmap.h>
+//#include <qimage.h>
+//#include <qclipboard.h>
+//#include <knotifyclient.h>
+//#include <khelpmenu.h>
+//#include <qcursor.h>
+//#include <qregexp.h>
+//#include <qpainter.h>
+//#include <qwhatsthis.h>
+//#include <stdlib.h>
+
+
+//#include <kglobalsettings.h>
+//#include <qwindowdefs.h>
+
+//#include <stdlib.h>
+//#include <unistd.h>
+
+//#include <qapplication.h>
+
+
+//#include <qwhatsthis.h>
+
+//#include <kglobal.h>
+//#include <X11/Xutil.h>
+//#include <qimage.h>
+
+#include <qdatastream.h>
+//#include <qbitmap.h>
+#include <X11/Xlib.h>
+//#include <kglobal.h>
+#include <qpixmap.h>
+
+int main()
+{
+	/*
+	Display *display;
+	int screen;
+	Window root;
+	display = XOpenDisplay(0);
+	screen = DefaultScreen(display);
+	root = RootWindow(display, screen);
+	*/
+	QPixmap snapshot = QPixmap::grabWindow( 0, 100, 100, 100, 100 );
+	return 0;
+}
+
+/*
+//    SizeTip *sizeTip;
+    QTimer *tipTimer;
+bool mouseDown;
+QRect grabRect;
+
+void mousePressEvent( QMouseEvent *e )
+{
+  if ( e->button() == 0x01 )//left button
+  {
+    mouseDown = true;
+    grabRect = QRect( e->pos(), e->pos() );
+  }
+}
+
+void mouseMoveEvent( QMouseEvent *e )
+{
+  if ( mouseDown )
+  {
+    //sizeTip->hide();
+
+    drawRubber();
+    grabRect.setBottomRight( e->pos() );
+    drawRubber();
+  }
+}
+
+void mouseReleaseEvent( QMouseEvent *e )
+{
+  mouseDown = false;
+  drawRubber();
+  //sizeTip->hide();
+
+  grabRect.setBottomRight( e->pos() );
+//  grabRect = grabRect.normalize();
+
+  QPixmap region = QPixmap::grabWindow( winId(), grabRect.x(), grabRect.y(), grabRect.width(), grabRect.height() );
+
+  QApplication::restoreOverrideCursor();
+
+ // emit regionGrabbed( region );
+}
+
+
+void drawRubber()
+{
+  QPainter p;
+
+//  p.setRasterOp( NotROP );
+//  p.setPen( QPen( color0, 1 ) );
+//  p.setBrush( NoBrush );
+
+  style().drawPrimitive( QStyle::PE_FocusRect, &p, grabRect, colorGroup(),
+    //  QStyle::Style_Default, QStyleOption( colorGroup().base() ) );
+
+  p.end();
+}
+*/

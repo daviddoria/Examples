@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(OrImageFilter)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(OrImageFilter OrImageFilter.cxx)
+TARGET_LINK_LIBRARIES(OrImageFilter ${ITK_LIBRARIES})
+

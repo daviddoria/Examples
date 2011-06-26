@@ -1,0 +1,12 @@
+\documentclass[10pt]{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\rule{0pt}{2in} \rule{0.9\linewidth}{0pt}}
+		\caption{Test Caption}
+	\end{figure} 
+
+\end{document}

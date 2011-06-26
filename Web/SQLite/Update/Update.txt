@@ -1,0 +1,2 @@
+Modify a row with data in specific columns only:
+update TestTable Set Gift='computer' where Name='David';

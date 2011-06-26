@@ -1,0 +1,20 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\bin\Debug\TableLayoutPanel.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\bin\Debug\TableLayoutPanel.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\bin\Debug\TableLayoutPanel.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\TableLayoutPanel.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\TableLayoutPanel.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\TableLayoutPanel.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\TableLayoutPanel.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\TableLayoutPanel.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TableLayoutPanel\obj\Debug\TableLayoutPanel.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\TableLayoutPanel.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\TableLayoutPanel.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\TableLayoutPanel.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\bin\Debug\TableLayoutPanel.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\bin\Debug\TableLayoutPanel.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\bin\Debug\TableLayoutPanel.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\TableLayoutPanel.Form1.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\TableLayoutPanel.Resources.resources
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TableLayoutPanel\TableLayoutPanel\obj\Debug\TableLayoutPanel.vbproj.GenerateResource.Cache

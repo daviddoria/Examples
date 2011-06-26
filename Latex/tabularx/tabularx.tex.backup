@@ -1,0 +1,20 @@
+\documentclass[11pt,a4paper]{article}
+
+\begin{document}
+\begin{table}
+\centering
+\caption{MyCaption}
+\begin{center}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |c|c|c|}
+%\begin{tabular}{|c|c|c|}
+
+\hline
+Column1 Title Goes here & Column2 Title Goes here & Column3 title here\\
+
+\end{tabular*}
+%\end{tabular}
+\end{center}
+
+\end{table}
+
+\end{document}

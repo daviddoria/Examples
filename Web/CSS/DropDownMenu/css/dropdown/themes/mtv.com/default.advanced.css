@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/** 
+ * MTV.com Advanced CSS Drop-Down Menu Theme
+ *
+ * @file		default.advanced.css
+ * @name		MTV.com
+ * @version		0.1
+ * @type		transitional
+ * @browsers	Windows: IE6+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+@import "default.css";
+
+
+
+
+	ul.dropdown li a {
+	 display: block;
+	 padding: 5px 30px;
+	}
+
+
+/* ------------- Override default */
+
+	ul.dropdown li {
+	 padding: 0;
+	}
+
+	ul.dropdown ul a { /* POI, proposal: override abstract a */
+	 padding: 8px;
+	}
+
+
+/* ------------- Reinitiate default: post-override activities  */
+
+	ul.dropdown *.dir { /* POI */
+	 padding: 5px 30px;
+	}
+
+	ul.dropdown ul *.dir {
+	 padding: 8px 30px 8px 8px;
+	}
+
+
+/* ------------- Custom */
+
+	ul.dropdown li {
+
+	}
+
+	/* Especially for IE6 or lower */
+
+	ul.dropdown ul a {
+	 /*width: 139px;*/
+	}
+
+	ul.dropdown ul *.dir {
+	 /*width: 129px;*/
+	}
+
+
+	ul.dropdown ul li.dir ul { /* POI, proposal */
+	 margin-top: -1px ;
+	 margin-left: 1px;
+	}
+
+
+
+	/* Roll-overs: li level */
+
+	/* First-level abstract */
+	ul.dropdown li.hover,
+	ul.dropdown li:hover {
+	 border-top-color: #5b5b5b;
+	 background-color: #3d3d3d;
+	}
+
+	/* Non-first-level abstract */
+	ul.dropdown ul li.hover,
+	ul.dropdown ul li:hover {
+	 background: #4c4c4c url(images/comnav-arrowover.png) 100% 50% no-repeat;
+	}
+
+	ul.dropdown ul ul li.hover,
+	ul.dropdown ul ul li:hover {
+	 background: #595959 url(images/comnav-arrowover2.png) 100% 50% no-repeat;
+	}
+
+
+
+
+	/* Proposals for Open */
+
+	ul.dropdown ul a.open,
+	ul.dropdown ul li:hover > a.dir {
+	 border-top-color: #5b5b5b;
+     background-image: url(images/comnav-arrowover.png);
+	}
+
+	ul.dropdown ul ul a.open,
+	ul.dropdown ul ul li:hover > a.dir { /* ? merge with ul.dropdown ul a.dir:hover */
+	 border-top-color: #595959;
+	 background: #595959 url(images/comnav-arrowover2.png) 100% 50% no-repeat;
+	 color: #fff;
+	}
+
+	/* Override UPPER TWO definitions */
+	ul.dropdown ul a.open:hover,
+	ul.dropdown ul li:hover > a.dir:hover { /* ? merge with ul.dropdown ul a.dir:hover */
+	 background: #4698ca url(images/comnav-arrowon.png) 100% 50% no-repeat;
+	 color: #fff;
+	}
+
+

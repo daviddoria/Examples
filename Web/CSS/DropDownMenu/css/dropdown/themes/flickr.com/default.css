@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/** 
+ * Flickr CSS Drop-Down Menu Theme
+ *
+ * @file		default.css
+ * @name		Flickr
+ * @version		beta
+ * @type		transitional
+ * @browsers	Windows: IE5+, Opera7+, Firefox1+
+ *				Mac OS: Safari2+, Firefox2+
+ *
+ * @link		http://www.lwis.net/
+ * @copyright	2008 Live Web Institute. All Rights Reserved.
+ *
+ */
+
+
+/*-------------------------------------------------/
+ * @section		Base Drop-Down Styling
+ * @structure	ul (unordered list)
+ *				ul li (list item)
+ *				ul li a (links)
+ *				/*\.class|(li|a):hover/
+ * @level sep	ul
+ */
+
+
+ul.dropdown {
+ padding-bottom: 1px;
+ background: url(images/pattern1.png) 0 100% repeat-x;
+ font: bold 13px/normal Arial, Helvetica, sans-serif;
+}
+
+	ul.dropdown li {
+	 padding: 4px 6px;
+	 color: #0063dc;
+	}
+
+	ul.dropdown li.divider {
+	 border-top: solid 1px #e5e5e5;
+	}
+
+	ul.dropdown li.hover,
+	ul.dropdown li:hover {
+	 color: #0063dc;
+	}
+
+	ul.dropdown a:link,
+	ul.dropdown a:visited	{ color: #0063dc; text-decoration: none; }
+	ul.dropdown a:hover		{ color: #0063dc; text-decoration: underline; }
+	ul.dropdown a:active	{ color: #ff0084; }
+
+
+	/* -- level mark -- */
+
+	ul.dropdown ul {
+	 width: 150px;
+	 padding: 3px 6px;
+	 border-style: solid;
+	 border-width: 1px;
+	 border-color: #f0f0f0 #666 #666 #f0f0f0;
+	 background-color: #fff;
+	 font-weight: normal;
+	 font-size: 11px;
+	}
+
+		ul.dropdown ul li {
+		}
+
+
+
+/*-------------------------------------------------/
+ * @section		Support Class `dir`
+ * @level sep	ul, .class
+ */
+
+
+ul.dropdown *.dir {
+ padding-right: 25px;
+ background-image: url(images/nav-arrow-down.png);
+ background-position: 95% 50%;
+ background-repeat: no-repeat;
+}
+
+
+/* -- Components override -- */
+
+ul.dropdown-vertical ul {
+ top: 0;
+ left: 100%;
+}
+
+ul.dropdown-vertical-rtl ul {
+ right: 100%;
+}
+
+ul.dropdown-horizontal,
+ul.dropdown-linear,
+ul.dropdown-upward {
+ width: 100%;
+}
+
+ul.dropdown-horizontal ul *.dir {
+ padding-right: 25px;
+ background-image: url(images/nav-arrow-right.png);
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+ul.dropdown-upward *.dir {
+ background-image: url(images/nav-arrow-up.png);
+}
+
+ul.dropdown-vertical *.dir {
+ background-image: url(images/nav-arrow-right.png);
+ background-position: 180px 50%;
+}
+
+ul.dropdown-vertical ul *.dir,
+ul.dropdown-upward ul *.dir {
+ background-image: url(images/nav-arrow-right.png);
+ background-position: 100% 50%;
+}
+
+ul.dropdown-vertical-rtl *.dir {
+ padding-right: 6px;
+ padding-left: 25px;
+ background-image: url(images/nav-arrow-left.png);
+ background-position: 5px 50%;
+}
+
+ul.dropdown-vertical-rtl ul *.dir {
+ padding-right: 0;
+ background-image: url(images/nav-arrow-left.png);
+ background-position: 0 50%;
+}

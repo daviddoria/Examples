@@ -1,0 +1,20 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\pagestyle{plain}
+
+\usepackage{setspace}
+\doublespacing
+
+\begin{document}
+\section{Test}
+Test paragraph. We refereced \cite {supercurves}.
+
+If you don't cite something but want it listed as a reference, do this:
+\verb|\nocite{blah}|
+
+\bibliography{Test}
+\bibliographystyle{plain} % MUST include this line or will get ``undefined reference'' errors
+
+
+
+\end{document}

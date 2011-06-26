@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(ImageFileReader)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(ImageFileReader ImageFileReader.cxx)
+TARGET_LINK_LIBRARIES(ImageFileReader ${ITK_LIBRARIES})
+
+ADD_EXECUTABLE(ReadWrite ReadWrite.cxx)
+TARGET_LINK_LIBRARIES(ReadWrite ${ITK_LIBRARIES})

@@ -1,0 +1,25 @@
+/* make the background black*/
+body {
+	margin: 30px 0 0 0;
+	padding: 0;
+	background: #1F2429;
+	text-align: justify;
+	font: 15px Arial, Helvetica, sans-serif;
+	color: #626262;
+}
+/* Page */
+
+#page {
+	background: #D8DFE6;
+	padding: 40px 40px 0 40px;
+}
+
+/* Content */
+
+#content {
+	background: #FFFFFF;
+	margin-right: 340px;
+	padding: 0 30px;
+	border-bottom: 3px solid #59C0F8;
+	border-top: 3px solid #59C0F8;
+}

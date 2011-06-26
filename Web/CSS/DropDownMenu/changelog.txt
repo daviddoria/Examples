@@ -1,0 +1,24 @@
+1.0.1
+
+New themes added to the library. Those were Nvidia and Flickr.
+Support for Mootools added. This is a JavaScript helper for IE6 or earlier.
+
+1.0.2
+
+Support for Scriptaculous available (Thanks to César Izurieta @ http://caih.org/)
+Changes to jquery.dropdown.js - it's now a function!
+
+1.0.3
+
+Nvidia's opacity on IE8 issue fixed (Thanks to Alex Moore)
+SWFObject upgraded from version 2.1 to 2.2
+JQuery upgraded from version 1.2.6 to 1.3.2
+Improvements to scriptaculous.dropdown.js
+
+1.1
+
+New themes (Lwis Celebrity and Vimeo) added to the mix
+New Linear Columnar drop-down configuration added (dropdown.linear.columnar.css)
+Compulsory code in the HTML has been marked with Start and End tags
+CSS helpers are now included through HTML and not via themes' CSS files
+Media type has been set to "screen" only

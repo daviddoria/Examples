@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage{filecontents}
+
+\begin{filecontents}{shortbib.bib}
+@ARTICLE{supercurves,
+    AUTHOR={Minghui Xia},
+    TITLE={Image Registration by "Super-Curves"},
+    JOURNAL={IEEE Transactions on Image Processing},
+    YEAR={1985},
+   VOLUME = {13},
+    PAGES={720},
+}
+\end{filecontents}
+
+
+\usepackage{fullpage}
+\pagestyle{plain}
+
+\usepackage{setspace}
+\doublespacing
+
+\begin{document}
+\section{Test}
+Test paragraph. We refereced \cite {supercurves}.
+
+\bibliographystyle{plain}
+\bibliography{shortbib}
+
+\end{document}

@@ -1,0 +1,13 @@
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\bin\Debug\TestSystray.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\bin\Debug\TestSystray.pdb
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\bin\Debug\TestSystray.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\TestSystray.Form1.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\TestSystray.Resources.resources
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\TestSystray.vbproj.GenerateResource.Cache
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\TestSystray.exe
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\TestSystray.xml
+D:\Documents and Settings\Dave\Local Settings\Application Data\Temporary Projects\TestSystray\obj\Debug\TestSystray.pdb
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestSystray\TestSystray\obj\Debug\TestSystray.exe
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestSystray\TestSystray\obj\Debug\TestSystray.xml
+D:\Documents and Settings\Dave\Desktop\VB_Examples\TestSystray\TestSystray\obj\Debug\TestSystray.pdb
