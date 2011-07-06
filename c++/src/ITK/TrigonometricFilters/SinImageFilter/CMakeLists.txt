@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(SinImageFilter)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(SinImageFilter SinImageFilter.cxx)
+TARGET_LINK_LIBRARIES(SinImageFilter ${ITK_LIBRARIES})

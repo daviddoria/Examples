@@ -2,7 +2,7 @@
 #include "itkImageRegionIterator.h"
 
 template<typename TImage>
-void DeepCopy(typename TImage::Pointer input, typename TImage::Pointer output)
+static void DeepCopy(typename TImage::Pointer input, typename TImage::Pointer output)
 {
   output->SetRegions(input->GetLargestPossibleRegion());
   output->Allocate();

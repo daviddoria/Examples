@@ -2,8 +2,6 @@
 #include "itkImageFileWriter.h"
 #include "itkVTKPolyDataWriter.h"
 
-#include <cstdio>
-
 int main(int, char* [] )
 {
   const double height = 100;
@@ -26,9 +24,6 @@ int main(int, char* [] )
   insize[1] = height;
   voronoiGenerator->SetBoundary(insize);
 
-  //const int numberOfSeeds = 5;
-  //voronoiGenerator->SetRandomSeeds(numberOfSeeds);
-  
   // Create a list of seeds
   std::vector<PointType> seeds;
   PointType seed0;
@@ -64,7 +59,7 @@ int main(int, char* [] )
   voronoiGenerator->Update();
   voronoiDiagram = voronoiGenerator->GetOutput();
 
-  for(int i = 0; i < seeds.size(); i++)
+  for(unsigned int i = 0; i < seeds.size(); i++)
     {
     PointType currP = voronoiDiagram->GetSeed(i);
     std::cout << "Seed No." << i << ": At (" << currP[0] << "," << currP[1] << ")" << std::endl;
@@ -91,11 +86,21 @@ int main(int, char* [] )
   int j = 0;
   for(allVerts = voronoiDiagram->VertexBegin(); allVerts != voronoiDiagram->VertexEnd(); ++allVerts)
     {
+    //voronoiDiagram->SetPoint(j, *allVerts);
     std::cout << "Vertices No." << j;
     j++;
-    std::cout << ": At (" << (*allVerts)[0] << "," << (*allVerts)[1] << ")" << std::endl;
+    //std::cout << ": At (" << (*allVerts)[0] << "," << (*allVerts)[1] << ")" << std::endl;
+    std::cout<<": At ("<<(allVerts.Value())[0]<<","<<(allVerts.Value())[1]<<")"<<std::endl;
     }
 
+  // Write the resulting mesh
+  typedef itk::VTKPolyDataWriter<VoronoiDiagramType> WriterType;
+  WriterType::Pointer writer = WriterType::New();
+  writer->SetInput(voronoiDiagram);
+  writer->SetFileName("voronoi.vtk");
+  writer->Update();
+
+  // Setup an image to visualize the input
   {
   typedef itk::Image< unsigned char, 2>  ImageType;
 
@@ -139,13 +144,6 @@ int main(int, char* [] )
   writer->SetInput(image);
   writer->Update();
   }
-
-
-  typedef itk::VTKPolyDataWriter<VoronoiDiagramType::Superclass> WriterType;
-  WriterType::Pointer writer = WriterType::New();
-  writer->SetInput(voronoiDiagram);
-  writer->SetFileName("voronoi.vtk");
-  writer->Update();
 
   return EXIT_SUCCESS;
 }

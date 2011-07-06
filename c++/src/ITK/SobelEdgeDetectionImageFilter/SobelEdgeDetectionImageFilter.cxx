@@ -6,19 +6,21 @@
 typedef itk::Image<unsigned char, 2>  UnsignedCharImageType;
 typedef itk::Image<float, 2>  FloatImageType;
 
-static void CreateImage(UnsignedCharImageType::Pointer);
+//static void CreateImage(UnsignedCharImageType::Pointer);
 
 int main(int argc, char *argv[])
 {
   UnsignedCharImageType::Pointer image = UnsignedCharImageType::New();
+  //CreateImage(image);
 
   typedef itk::SobelEdgeDetectionImageFilter <UnsignedCharImageType, FloatImageType>
+  //typedef itk::SobelEdgeDetectionImageFilter <FloatImageType, FloatImageType>
           SobelEdgeDetectionImageFilterType;
   SobelEdgeDetectionImageFilterType::Pointer sobelFilter
           = SobelEdgeDetectionImageFilterType::New();
-  sobelFilter->SetInput(image);
+  //sobelFilter->SetInput(image);
   sobelFilter->Update();
-
+/*
   typedef itk::RescaleIntensityImageFilter< FloatImageType, UnsignedCharImageType > RescaleFilterType;
   RescaleFilterType::Pointer rescaleFilter = RescaleFilterType::New();
   rescaleFilter->SetInput(sobelFilter->GetOutput());
@@ -31,10 +33,10 @@ int main(int argc, char *argv[])
   writer->SetFileName("output.png");
   writer->SetInput(rescaleFilter->GetOutput());
   writer->Update();
-
+  */
   return EXIT_SUCCESS;
 }
-
+/*
 void CreateImage(UnsignedCharImageType::Pointer image)
 {
   itk::Index<2> start;
@@ -60,3 +62,4 @@ void CreateImage(UnsignedCharImageType::Pointer image)
       }
     }
 }
+*/

@@ -6,5 +6,5 @@ FIND_PACKAGE(ITK REQUIRED)
 INCLUDE(${ITK_USE_FILE})
 
 ADD_EXECUTABLE(LinearInterpolateImageFunction LinearInterpolateImageFunction.cxx)
-TARGET_LINK_LIBRARIES(LinearInterpolateImageFunction ITKCommon)
+TARGET_LINK_LIBRARIES(LinearInterpolateImageFunction ${ITK_LIBRARIES})
 

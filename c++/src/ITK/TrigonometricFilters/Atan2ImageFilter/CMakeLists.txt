@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Atan2ImageFilter)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(Atan2ImageFilter Atan2ImageFilter.cxx)
+TARGET_LINK_LIBRARIES(Atan2ImageFilter ${ITK_LIBRARIES})

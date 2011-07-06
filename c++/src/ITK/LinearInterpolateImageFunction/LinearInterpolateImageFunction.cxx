@@ -20,6 +20,10 @@ int main(int, char*[])
   interpolator->SetInputImage(image);
 
   std::cout << "Value at 1.3: " << interpolator->EvaluateAtContinuousIndex(pixel) << std::endl;
+  
+  itk::Index<1> index;
+  index[0] = 3;
+  std::cout << "Value at 3: " << interpolator->EvaluateAtIndex(index) << std::endl;
 
   return EXIT_SUCCESS;
 }

@@ -111,17 +111,14 @@ int main(int, char *[])
 void CreateImage(FloatImageType::Pointer image)
 {
   // Create an image with negative values
-  FloatImageType::RegionType region;
   FloatImageType::IndexType start;
-  start[0] = 0;
-  start[1] = 0;
+  start.Fill(0);
 
   FloatImageType::SizeType size;
   size[0] = 200;
   size[1] = 300;
 
-  region.SetSize(size);
-  region.SetIndex(start);
+  FloatImageType::RegionType region(start,size);
 
   image->SetRegions(region);
   image->Allocate();
