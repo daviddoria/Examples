@@ -1,4 +1,5 @@
 #include <vtkActor.h>
+#include <vtkBalloonRepresentation.h>
 #include <vtkCommand.h>
 #include <vtkImageActor.h>
 #include <vtkImageCanvasSource2D.h>
@@ -13,6 +14,7 @@
 #include <vtkSeedRepresentation.h>
 #include <vtkSmartPointer.h>
 #include <vtkSphereSource.h>
+#include <vtkSphereHandleRepresentation.h>
 
 class vtkSeedCallback : public vtkCommand
 {
@@ -28,19 +30,26 @@ class vtkSeedCallback : public vtkCommand
     {
       if (event == vtkCommand::PlacePointEvent)
         {
-	if(this->SeedRepresentation->GetNumberOfSeeds() > 1)
-          {
-          this->SeedWidget->DeleteSeed(0);
-          }
+	std::cout << "Placing point..." << std::endl;
+	std::cout << "There are now " << this->SeedRepresentation->GetNumberOfSeeds() << " seeds." << std::endl;
+	for(unsigned int seedId = 0; seedId < this->SeedRepresentation->GetNumberOfSeeds(); seedId++)
+	  {
+	  double pos[3];
+	  this->SeedRepresentation->GetSeedDisplayPosition(seedId, pos);
+	  std::cout << "Seed " << seedId << " : (" << pos[0] << " " << pos[1] << " " << pos[2] << ")" << std::endl;
+	  }
+	return;
         }
       if (event == vtkCommand::InteractionEvent)
         {
+	std::cout << "Interaction..." << std::endl;
         if (calldata)
           {
 	  double pos[3];
 	  this->SeedRepresentation->GetSeedDisplayPosition(0, pos);
-	  cout << "(" << pos[0] << " " << pos[1] << " " << pos[2] << ")" << endl;
+	  std::cout << "Moved to (" << pos[0] << " " << pos[1] << " " << pos[2] << ")" << std::endl;
           }
+	return;
         }
     }
     
@@ -54,8 +63,8 @@ class vtkSeedCallback : public vtkCommand
     }
     
   private:
-    vtkSmartPointer<vtkSeedRepresentation> SeedRepresentation;
-    vtkSmartPointer<vtkSeedWidget> SeedWidget;
+    vtkSeedRepresentation* SeedRepresentation;
+    vtkSeedWidget* SeedWidget;
 };
 
 int main(int argc, char *argv[])
@@ -66,7 +75,10 @@ int main(int argc, char *argv[])
   drawing->SetScalarTypeToUnsignedChar();
   drawing->SetNumberOfScalarComponents(3);
   drawing->SetExtent(0, 20, 0, 50, 0, 0);
+  // Make a blue background
+  drawing->SetDrawColor(0, 0, 255); 
   drawing->FillBox(0,20,0,50);
+  // Make a red circle
   drawing->SetDrawColor(255, 0, 0, 0);
   drawing->DrawCircle(9, 10, 5);
   drawing->Update();
@@ -83,7 +95,7 @@ int main(int argc, char *argv[])
     vtkSmartPointer<vtkRenderWindow>::New();
   renderWindow->AddRenderer(renderer);
   
-  // an interactor
+  // An interactor
   vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor = 
     vtkSmartPointer<vtkRenderWindowInteractor>::New();
   renderWindowInteractor->SetRenderWindow(renderWindow);
@@ -92,11 +104,17 @@ int main(int argc, char *argv[])
   vtkSmartPointer<vtkInteractorStyleImage> interactorStyleImage =
     vtkSmartPointer<vtkInteractorStyleImage>::New();
   renderWindowInteractor->SetInteractorStyle(interactorStyleImage);
-  
+
   // Create the representation
+  /*
+  // This makes crosshairs
   vtkSmartPointer<vtkPointHandleRepresentation2D> handle = 
     vtkSmartPointer<vtkPointHandleRepresentation2D>::New();
   handle->GetProperty()->SetColor(1,0,0);
+  */
+  // This makes circles
+  vtkSmartPointer<vtkSphereHandleRepresentation> handle = 
+    vtkSmartPointer<vtkSphereHandleRepresentation>::New();
   vtkSmartPointer<vtkSeedRepresentation> rep = 
     vtkSmartPointer<vtkSeedRepresentation>::New();
   rep->SetHandleRepresentation(handle);

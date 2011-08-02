@@ -3,50 +3,66 @@
 #include "itkSimpleContourExtractorImageFilter.h"
 #include "itkImageRegionIterator.h"
 
-typedef itk::Image<unsigned char, 2>  ImageType;
+typedef itk::Image<unsigned char, 2>  UnsignedCharImageType;
 
-void CreateImage(ImageType::Pointer image);
+static void CreateImage(UnsignedCharImageType::Pointer image);
 
 int main(int, char *[])
 {
-  ImageType::Pointer image = ImageType::New();
+  UnsignedCharImageType::Pointer image = UnsignedCharImageType::New();
   CreateImage(image);
 
-  typedef itk::SimpleContourExtractorImageFilter <ImageType, ImageType>
+  typedef itk::SimpleContourExtractorImageFilter <UnsignedCharImageType, UnsignedCharImageType>
           SimpleContourExtractorImageFilterType;
   SimpleContourExtractorImageFilterType::Pointer contourFilter
           = SimpleContourExtractorImageFilterType::New();
   contourFilter->SetInput(image);
   contourFilter->Update();
-
+   
+  typedef  itk::ImageFileWriter< UnsignedCharImageType  > WriterType;
+  WriterType::Pointer writer = WriterType::New();
+  writer->SetFileName("output.png");
+  writer->SetInput(contourFilter->GetOutput());
+  writer->Update();
+  
   return EXIT_SUCCESS;
 }
 
-void CreateImage(ImageType::Pointer image)
+void CreateImage(UnsignedCharImageType::Pointer image)
 {
   // Create an image
-  ImageType::IndexType start;
+  itk::Index<2> start;
   start.Fill(0);
 
-  ImageType::SizeType size;
+  itk::Size<2> size;
   size.Fill(100);
 
-  ImageType::RegionType region;
-  region.SetSize(size);
-  region.SetIndex(start);
+  itk::ImageRegion<2> region(start,size);
 
   image->SetRegions(region);
   image->Allocate();
+  image->FillBuffer(0);
 
-  // Make the whole image white
-  itk::ImageRegionIterator<ImageType> iterator(image,image->GetLargestPossibleRegion());
-
-  /*
-   //Create a square
-  while(!iterator.IsAtEnd())
+  // Create a line pixels
+  for(unsigned int i = 40; i < 60; ++i)
     {
-    iterator.Set(255);
-    ++iterator;
+    itk::Index<2> pixel;
+    pixel.Fill(i);
+    image->SetPixel(pixel, 255);
     }
-  */
+    
+  // Create another line of pixels
+  for(unsigned int i = 10; i < 20; ++i)
+    {
+    itk::Index<2> pixel;
+    pixel[0] = 10;
+    pixel[1] = i;
+    image->SetPixel(pixel, 255);
+    }
+ 
+  typedef  itk::ImageFileWriter< UnsignedCharImageType  > WriterType;
+  WriterType::Pointer writer = WriterType::New();
+  writer->SetFileName("input.png");
+  writer->SetInput(image);
+  writer->Update();
 }

@@ -16,7 +16,6 @@ void CreateMovingImage(ImageType::Pointer image);
 int main(int argc, char * argv[])
 {
   typedef   float          VectorComponentType;
-
   typedef   itk::Vector< VectorComponentType, Dimension >    VectorType;
   typedef   itk::Image< VectorType,  Dimension >   DeformationFieldType;
 

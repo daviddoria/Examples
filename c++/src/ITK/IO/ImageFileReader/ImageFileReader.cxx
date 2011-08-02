@@ -17,6 +17,10 @@ int main(int argc, char *argv[])
   ReaderType::Pointer reader = ReaderType::New();
   reader->SetFileName(inputFilename.c_str());
   reader->Update();
+  
+  std::cout << "Size: " << reader->GetOutput()->GetLargestPossibleRegion().GetSize() << std::endl;
+  std::cout << "Total pixels: " << reader->GetOutput()->GetLargestPossibleRegion().GetSize()[0] * 
+                                   reader->GetOutput()->GetLargestPossibleRegion().GetSize()[1] << std::endl;
 
   return EXIT_SUCCESS;
 }

@@ -13,5 +13,5 @@ INCLUDE(${ITK_USE_FILE})
 ADD_EXECUTABLE(ShapedNeighborhoodIterator ShapedNeighborhoodIterator.cxx)
 TARGET_LINK_LIBRARIES(ShapedNeighborhoodIterator ${ITK_LIBRARIES}) #vtkHybrid 
 
-ADD_EXECUTABLE(ShapedNeighborhoodIterator_SmallRegion ShapedNeighborhoodIterator_SmallRegion.cxx)
-TARGET_LINK_LIBRARIES(ShapedNeighborhoodIterator_SmallRegion ${ITK_LIBRARIES}) #vtkHybrid 
+# ADD_EXECUTABLE(ShapedNeighborhoodIterator_SmallRegion ShapedNeighborhoodIterator_SmallRegion.cxx)
+# TARGET_LINK_LIBRARIES(ShapedNeighborhoodIterator_SmallRegion ${ITK_LIBRARIES}) #vtkHybrid 

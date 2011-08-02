@@ -41,7 +41,7 @@ int main(int,char*[])
   typedef boost::property_map<Graph, boost::vertex_index_t>::type IndexMap;
   IndexMap index = get(boost::vertex_index, g);
 
-  typedef boost::graph_traits<Graph>::vertex_iterator vertex_iter;
+  typedef Graph::vertex_iterator vertex_iter;
   std::pair<vertex_iter, vertex_iter> vertexPair;
   for (vertexPair = boost::vertices(g); vertexPair.first != vertexPair.second; ++vertexPair.first)
     {

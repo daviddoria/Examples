@@ -5,16 +5,19 @@
 
 void MainWindow::StartProgressSlot()
 {
+  std::cout << "StartProgressSlot()" << std::endl;
   this->progressBar->show();
 }
 
 void MainWindow::StopProgressSlot()
 {
+  std::cout << "StopProgressSlot()" << std::endl;
   this->progressBar->hide();
 }
 
 void ProgressThread::run()
 {
+  std::cout << "run()" << std::endl;
   emit StartProgressSignal();
   for(unsigned int i = 0; i < 1e8; i++)
     {
@@ -22,12 +25,13 @@ void ProgressThread::run()
     }
 
   std::cout << "Done." << std::endl;
-  exit();
+  this->exit();
   emit StopProgressSignal();
 }
 
 void ProgressThread::exit()
 {
+  std::cout << "exit()" << std::endl;
   emit StopProgressSignal();
 }
 
@@ -45,5 +49,11 @@ MainWindow::MainWindow()
 void MainWindow::on_btnStart_clicked()
 {
   std::cout << "Clicked start." << std::endl;
-  myProgressThread.start();
+  this->myProgressThread.start(); // calls run()
+}
+
+void MainWindow::on_btnStop_clicked()
+{
+  std::cout << "Clicked stop." << std::endl;
+  this->myProgressThread.exit(); // calls exit()
 }

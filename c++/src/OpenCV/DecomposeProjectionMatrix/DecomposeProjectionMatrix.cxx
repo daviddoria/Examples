@@ -6,7 +6,7 @@
 int main(int argc, char*argv[])
 {
   // Create a synthetic projection matrix
-  cv::Mat P(3,4,CV_32FC1);
+  cv::Mat P(3,4,cv::DataType<float>::type);
   P.at<float>(0,0) = 1;
   P.at<float>(1,0) = 0;
   P.at<float>(2,0) = 0;
@@ -26,9 +26,9 @@ int main(int argc, char*argv[])
   std::cout << "P: " << P << std::endl;
 
   // Decompose the projection matrix into:
-  cv::Mat K(3,3,CV_32FC1); // intrinsic parameter matrix
-  cv::Mat R(3,3,CV_32FC1); // rotation matrix
-  cv::Mat T(4,1,CV_32FC1); // translation vector
+  cv::Mat K(3,3,cv::DataType<float>::type); // intrinsic parameter matrix
+  cv::Mat R(3,3,cv::DataType<float>::type); // rotation matrix
+  cv::Mat T(4,1,cv::DataType<float>::type); // translation vector
 
   cv::decomposeProjectionMatrix(P, K, R, T);
   std::cout << "K: " << K << std::endl;

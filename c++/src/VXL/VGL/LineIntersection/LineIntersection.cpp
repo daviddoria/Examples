@@ -17,8 +17,6 @@ int main()
 
   // Find the intersection, if there is one
   vgl_point_3d<double> intersectionPoint = vgl_intersection(Line0, Line1);
-
   
-  
-	return 0;
+  return 0;
 }

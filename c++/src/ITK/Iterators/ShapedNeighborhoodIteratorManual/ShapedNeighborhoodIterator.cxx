@@ -17,52 +17,50 @@ int main(int, char*[])
 {
   ImageType::Pointer image = ImageType::New();
   CreateImage(image);
-  ImageType::SizeType radius;
-  radius.Fill(1);
  
   typedef itk::ShapedNeighborhoodIterator<ImageType> IteratorType;
- 
+
+  itk::Size<2> radius;
+  radius.Fill(1);
+  IteratorType iterator(radius, image, image->GetLargestPossibleRegion());
+  std::cout << "By default there are " << iterator.GetActiveIndexListSize() << " active indices." << std::endl;
+  
   IteratorType::OffsetType top = {{0,-1}};
+  iterator.ActivateOffset(top);
   IteratorType::OffsetType bottom = {{0,1}};
-  IteratorType::OffsetType left = {{-1,0}};
-  IteratorType::OffsetType right = {{1,0}};
-  IteratorType::OffsetType center = {{0,0}};
- 
-  typedef itk::NeighborhoodAlgorithm
-    ::ImageBoundaryFacesCalculator< ImageType > FaceCalculatorType;
- 
-  FaceCalculatorType faceCalculator;
-  FaceCalculatorType::FaceListType faceList;
-  faceList = faceCalculator(image, image->GetLargestPossibleRegion(),
-                            radius);
-  FaceCalculatorType::FaceListType::iterator faceListIterator;
- 
-  for ( faceListIterator=faceList.begin(); faceListIterator != faceList.end(); ++faceListIterator)
+  iterator.ActivateOffset(bottom);
+  
+  std::cout << "Now there are " << iterator.GetActiveIndexListSize() << " active indices." << std::endl;
+  
+  IteratorType::IndexListType indexList = iterator.GetActiveIndexList();
+  IteratorType::IndexListType::const_iterator listIterator = indexList.begin();
+  while (listIterator != indexList.end())
     {
-    IteratorType iterator(radius, image, *faceListIterator);
-    iterator.ActivateOffset(top);
-    iterator.ActivateOffset(bottom);
-    iterator.ActivateOffset(left);
-    iterator.ActivateOffset(right);
-    iterator.ActivateOffset(center);
- 
-    for(iterator.GoToBegin(); !iterator.IsAtEnd(); ++iterator) // Crashes here!
+    std::cout << *listIterator << " ";
+    ++listIterator;
+    }
+  std::cout << std::endl;
+  
+  // Note that ZeroFluxNeumannBoundaryCondition is used by default so even
+  // pixels outside of the image will have valid values (equivalent to their neighbors just inside the image)
+  for(iterator.GoToBegin(); !iterator.IsAtEnd(); ++iterator)
+    {
+    std::cout << "New position: " << std::endl;
+    IteratorType::ConstIterator ci = iterator.Begin();
+
+    while (! ci.IsAtEnd())
       {
-      // The method for accessing pixel values using neighborhood
-      // iterators is GetPixel(offset).
-      std::cout << "top: " << iterator.GetPixel(top) << std::endl;
-      std::cout << "bottom: " << iterator.GetPixel(bottom) << std::endl;
-      std::cout << "left: " << iterator.GetPixel(left) << std::endl;
-      std::cout << "right: " << iterator.GetPixel(right) << std::endl;
-      
-      std::cout << "top: " << iterator[top] << std::endl;
-      std::cout << "bottom: " << iterator[bottom] << std::endl;
-      std::cout << "left: " << iterator[left] << std::endl;
-      std::cout << "right: " << iterator[right] << std::endl;
-      
+      std::cout << "Centered at " << iterator.GetIndex() << std::endl;
+      std::cout << "Neighborhood index " << ci.GetNeighborhoodIndex()
+		<< " is offset " << ci.GetNeighborhoodOffset()
+		<< " and has value " << ci.Get()
+		<< " The real index is " << iterator.GetIndex() + ci.GetNeighborhoodOffset() << std::endl;
+      ci++;
       }
     }
- 
+    
+  std::cout << std::endl;
+    
   return EXIT_SUCCESS;
 }
  
@@ -78,6 +76,6 @@ void CreateImage(ImageType::Pointer image)
 
   image->SetRegions(region);
   image->Allocate();
-  image->FillBuffer(0);
+  image->FillBuffer(1);
  
 }

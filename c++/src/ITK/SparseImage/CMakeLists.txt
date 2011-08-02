@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(SparseImage)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(SparseImage SparseImage.cpp)
+TARGET_LINK_LIBRARIES(SparseImage ${ITK_LIBRARIES})

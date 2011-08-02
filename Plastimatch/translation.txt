@@ -1,0 +1,11 @@
+# command_file.txt
+[GLOBAL]
+fixed=fixed.png
+moving=moving.png
+img_out=warped.png
+
+[STAGE]
+xform=translation
+optim=rsg
+max_its=30
+res=4 4 2

@@ -29,6 +29,7 @@ public:
 public slots:
 
   void on_btnStart_clicked();
+  void on_btnStop_clicked();
   void StartProgressSlot();
   void StopProgressSlot();
 

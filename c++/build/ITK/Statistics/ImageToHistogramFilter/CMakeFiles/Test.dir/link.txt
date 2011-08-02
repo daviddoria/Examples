@@ -1,0 +1,1 @@
+/usr/bin/c++     -Wall -Wno-deprecated -msse2 -g     CMakeFiles/Test.dir/Test.cxx.o  -o Test -rdynamic -lITKBasicFilters -lITKCommon -lITKIO -lITKStatistics 

@@ -1,4 +1,5 @@
 #include <vtkActor.h>
+#include <vtkCamera.h>
 #include <vtkCellArray.h>
 #include <vtkColorTransferFunction.h>
 #include <vtkContourFilter.h>
@@ -11,6 +12,7 @@
 #include <vtkRenderWindowInteractor.h>
 #include <vtkShepardMethod.h>
 #include <vtkSmartPointer.h>
+#include <vtkVertexGlyphFilter.h>
 
 int main(int argc, char *argv[])
 {
@@ -20,11 +22,16 @@ int main(int argc, char *argv[])
   points->InsertNextPoint(100.0, 0.0, 0.0);
   points->InsertNextPoint(300.0, 0.0, 0.0);
 
-  vtkSmartPointer<vtkCellArray> verts = 
-      vtkSmartPointer<vtkCellArray>::New();
-  verts->InsertNextCell(2);
-  verts->InsertCellPoint(0);
-  verts->InsertCellPoint(1);
+  // Setup colors
+  unsigned char white[3] = {255, 255, 255};
+  unsigned char black[3] = {0, 0, 0};
+ 
+  vtkSmartPointer<vtkUnsignedCharArray> vertexColors =
+    vtkSmartPointer<vtkUnsignedCharArray>::New();
+  vertexColors->SetNumberOfComponents(3);
+  vertexColors->SetName("Colors");
+  vertexColors->InsertNextTupleValue(black);
+  vertexColors->InsertNextTupleValue(white);
 
   // Create a scalar array for the pointdata, each value represents the distance
   // of the vertices from the first vertex
@@ -35,26 +42,37 @@ int main(int argc, char *argv[])
   values->InsertNextValue(0.0);
   values->InsertNextValue(1.0);
   
-  vtkSmartPointer<vtkPolyData> polydata = 
+  // We must make two objects, because the ShepardMethod uses the ActiveScalars, as does the renderer!
+  vtkSmartPointer<vtkPolyData> polydataToProcess = 
       vtkSmartPointer<vtkPolyData>::New();
-  polydata->SetPoints(points);
-  polydata->SetVerts(verts);
-  polydata->GetPointData()->SetScalars(values);
-
+  polydataToProcess->SetPoints(points);
+  polydataToProcess->GetPointData()->SetScalars(values);
+  
+  vtkSmartPointer<vtkPolyData> polydataToVisualize = 
+    vtkSmartPointer<vtkPolyData>::New();
+  polydataToVisualize->SetPoints(points);
+  polydataToVisualize->GetPointData()->SetScalars(vertexColors);
+  
+  vtkSmartPointer<vtkVertexGlyphFilter> vertexGlyphFilter =
+    vtkSmartPointer<vtkVertexGlyphFilter>::New();
+  vertexGlyphFilter->AddInputConnection(polydataToVisualize->GetProducerPort());
+  vertexGlyphFilter->Update();
+  
   //Create a mapper and actor
   vtkSmartPointer<vtkPolyDataMapper> vertsMapper =
       vtkSmartPointer<vtkPolyDataMapper>::New();
-  vertsMapper->ScalarVisibilityOff();
-  vertsMapper->SetInputConnection(polydata->GetProducerPort());
+  //vertsMapper->ScalarVisibilityOff();
+  vertsMapper->SetInputConnection(vertexGlyphFilter->GetOutputPort());
+  
   vtkSmartPointer<vtkActor> vertsActor =
-      vtkSmartPointer<vtkActor>::New();
+    vtkSmartPointer<vtkActor>::New();
   vertsActor->SetMapper(vertsMapper);
   vertsActor->GetProperty()->SetColor(1,0,0);
   vertsActor->GetProperty()->SetPointSize(3);
-
+  
   // Create a shepard filter to interpolate the vertices over a regularized image grid
   vtkSmartPointer<vtkShepardMethod> shepard = vtkSmartPointer<vtkShepardMethod>::New();
-  shepard->SetInput(polydata);
+  shepard->SetInputConnection(polydataToProcess->GetProducerPort());
   shepard->SetSampleDimensions(2,2,2);
   shepard->SetModelBounds(100,300,-10,10,-10,10);
   shepard->SetMaximumDistance(1);
@@ -71,20 +89,23 @@ int main(int argc, char *argv[])
 
   //Create a mapper and actor for the resulting isosurfaces
   vtkSmartPointer<vtkPolyDataMapper> contourMapper =
-      vtkSmartPointer<vtkPolyDataMapper>::New();
+    vtkSmartPointer<vtkPolyDataMapper>::New();
   contourMapper->SetInputConnection(contourFilter->GetOutputPort());
   contourMapper->ScalarVisibilityOn();
   contourMapper->SetColorModeToMapScalars();
 
   vtkSmartPointer<vtkActor> contourActor =
-      vtkSmartPointer<vtkActor>::New();
+    vtkSmartPointer<vtkActor>::New();
   contourActor->SetMapper(contourMapper);
-
+  contourActor->GetProperty()->SetAmbient(1);
+  contourActor->GetProperty()->SetSpecular(0);
+  contourActor->GetProperty()->SetDiffuse(0);
+  
   // Report the results of the interpolation
   double *range = contourFilter->GetOutput()->GetScalarRange();
 
-  cout << "Shepard interpolation:" << endl;
-  cout << "contour output scalar range: " << range[0] << ", " << range[1] << endl;
+  std::cout << "Shepard interpolation:" << std::endl;
+  std::cout << "contour output scalar range: " << range[0] << ", " << range[1] << std::endl;
 
   vtkIdType nCells = contourFilter->GetOutput()->GetNumberOfCells();
   double bounds[6];
@@ -93,7 +114,7 @@ int main(int argc, char *argv[])
     if(i%2) // each isosurface value only has 2 cells to report on the odd ones
       {
       contourFilter->GetOutput()->GetCellBounds(i,bounds);
-      cout << "cell " << i << ", x position: " << bounds[0] << endl;
+      std::cout << "cell " << i << ", x position: " << bounds[0] << std::endl;
       }
     }
 
@@ -109,25 +130,27 @@ int main(int argc, char *argv[])
 
   // Create a renderer, render window and interactor
   vtkSmartPointer<vtkRenderer> renderer =
-      vtkSmartPointer<vtkRenderer>::New();
+    vtkSmartPointer<vtkRenderer>::New();
   renderer->GradientBackgroundOn();
-  renderer->SetBackground(0,0,0);
-  renderer->SetBackground2(1,1,1);
+  renderer->SetBackground(0,0,1);
+  renderer->SetBackground2(1,0,1);
 
   vtkSmartPointer<vtkRenderWindow> renderWindow = 
-      vtkSmartPointer<vtkRenderWindow>::New();
+    vtkSmartPointer<vtkRenderWindow>::New();
   renderWindow->AddRenderer(renderer);
   renderer->AddActor(contourActor);
   renderer->AddActor(vertsActor);
-
+  
   vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor = 
-      vtkSmartPointer<vtkRenderWindowInteractor>::New();
+    vtkSmartPointer<vtkRenderWindowInteractor>::New();
   renderWindowInteractor->SetRenderWindow(renderWindow);
 
-  renderWindow->Render();
+  // Position the camera so that the image produced is viewable
+  vtkCamera* camera = renderer->GetActiveCamera();
+  camera->SetPosition(450, 100, 100);
+  camera->SetFocalPoint(200, 0, 0);
+  camera->SetViewUp(0, 0, 1);
 
-  renderWindowInteractor->Initialize();
-  renderWindow->Render();
   renderWindowInteractor->Start();
 
   return EXIT_SUCCESS;

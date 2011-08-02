@@ -1,3 +1,5 @@
+// How to use this??
+
 #include "itkImage.h"
 #include "itkNeighborhoodAccessorFunctor.h"
 

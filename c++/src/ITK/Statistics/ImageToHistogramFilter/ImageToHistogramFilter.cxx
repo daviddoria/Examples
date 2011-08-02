@@ -1,7 +1,8 @@
-#include "itkImageToHistogramFilter.h"
 #include "itkImage.h"
-#include "itkRGBPixel.h"
+#include "itkImageRegionIterator.h"
 #include "itkImageRegionIteratorWithIndex.h"
+#include "itkImageToHistogramFilter.h"
+#include "itkRGBPixel.h"
 
 #include <fstream>
 
@@ -17,26 +18,6 @@ int main(int, char *[])
   RGBImageType::Pointer image = RGBImageType::New();
   CreateImage(image);
 
-  typedef itk::Statistics::ImageToHistogramFilter< RGBImageType >         HistogramFilterType;
-  typedef HistogramFilterType::HistogramMeasurementVectorType             HistogramMeasurementVectorType;
-  typedef HistogramFilterType::HistogramSizeType                          HistogramSizeType;
-  typedef HistogramFilterType::HistogramType                              HistogramType;
-
-  HistogramFilterType::Pointer filter = HistogramFilterType::New();
-  filter->SetInput(image);
-  filter->SetAutoMinimumMaximum(true);
-
-  HistogramSizeType histogramSize( MeasurementVectorSize );
-
-  histogramSize[0] = 4;  // number of bins for the Red   channel
-  histogramSize[1] = 4;  // number of bins for the Green channel
-  histogramSize[2] = 4;  // number of bins for the Blue  channel
-
-  filter->SetHistogramSize(histogramSize);
-  filter->SetMarginalScale(10); // Required (could this be set in the filter?)
-  filter->Update();
-
-  const HistogramType * histogram = filter->GetOutput();
 
   HistogramType::ConstIterator histogramIterator = histogram->Begin();
 

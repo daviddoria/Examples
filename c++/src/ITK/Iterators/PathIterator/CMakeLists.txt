@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(PathIterator)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+ADD_EXECUTABLE(PathIterator PathIterator.cxx)
+TARGET_LINK_LIBRARIES(PathIterator ${ITK_LIBRARIES})

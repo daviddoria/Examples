@@ -1,9 +1,8 @@
+// This is different from CropImageFilter only in the way
+// that the region to crop is specified.
 #include "itkImage.h"
 #include <itkImageFileReader.h>
 #include <itkExtractImageFilter.h>
-
-#include <iostream>
-#include <string>
 
 int main(int argc, char *argv[])
 {
@@ -24,7 +23,6 @@ int main(int argc, char *argv[])
 
   std::cout << "Image largest region: " << image->GetLargestPossibleRegion() << std::endl;
 
-  //////////////
   ImageType::IndexType desiredStart;
   desiredStart.Fill(3);
 
@@ -39,7 +37,7 @@ int main(int argc, char *argv[])
   FilterType::Pointer filter = FilterType::New();
   filter->SetExtractionRegion(desiredRegion);
   filter->SetInput(image);
-  filter->SetDirectionCollapseToIdentity();
+  filter->SetDirectionCollapseToIdentity(); // This is required.
   filter->Update();
   
   ImageType::Pointer output = filter->GetOutput();

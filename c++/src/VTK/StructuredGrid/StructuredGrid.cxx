@@ -16,11 +16,30 @@ int main(int, char *[])
 
   vtkSmartPointer<vtkPoints> points =
     vtkSmartPointer<vtkPoints>::New();
-  for(unsigned int i = 0; i < 2*3*1; i++)
-    {
-    points->InsertNextPoint(vtkMath::Random(0, 1), vtkMath::Random(0, 1), vtkMath::Random(0, 1));
-    }
-
+  /*
+  points->InsertNextPoint(0, 0, 0);
+  points->InsertNextPoint(1, 0, 0);
+  points->InsertNextPoint(2, 0, 0);
+  points->InsertNextPoint(0, 1, 0);
+  points->InsertNextPoint(1, 1, 0);
+  points->InsertNextPoint(2, 1, 0);
+  */
+  /*
+  points->InsertNextPoint(0, 0, 0);
+  points->InsertNextPoint(0, 1, 0);
+  points->InsertNextPoint(0, 2, 0);
+  points->InsertNextPoint(1, 0, 0);
+  points->InsertNextPoint(1, 1, 0);
+  points->InsertNextPoint(1, 2, 0);
+  */
+  
+  points->InsertNextPoint(0, 0, 0);
+  points->InsertNextPoint(1, 0, 0);
+  points->InsertNextPoint(0, 1, 0);
+  points->InsertNextPoint(1, 1, 0);
+  points->InsertNextPoint(0, 2, 0);
+  points->InsertNextPoint(1, 2, 1);
+  
   // Specify the dimensions of the grid
   structuredGrid->SetDimensions(2,3,1);
   structuredGrid->SetPoints(points);

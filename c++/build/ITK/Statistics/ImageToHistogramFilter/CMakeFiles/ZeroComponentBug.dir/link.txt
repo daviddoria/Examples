@@ -1,0 +1,1 @@
+/usr/bin/c++     -Wall -Wno-deprecated -msse2 -g     CMakeFiles/ZeroComponentBug.dir/ZeroComponentBug.cxx.o  -o ZeroComponentBug -rdynamic -lITKBasicFilters -lITKCommon -lITKIO -lITKStatistics 

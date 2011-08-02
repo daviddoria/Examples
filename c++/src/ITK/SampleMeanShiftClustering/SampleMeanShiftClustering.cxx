@@ -1,6 +1,6 @@
 #include <itkImageFileReader.h>
 #include <itkImageRegionIterator.h>
-#include <itkScalarImageToListAdaptor.h>
+#include <itkImageToListSampleAdaptor.h>
 #include <itkKdTree.h>
 #include <itkKdTreeGenerator.h>
 #include <itkMeanShiftModeCacheMethod.h>
@@ -32,7 +32,7 @@ int main(int argc, char* argv[] )
   imageReader->Update() ;
   ImageType::Pointer image = imageReader->GetOutput() ;
   
-  typedef itk::Statistics::ScalarImageToListAdaptor< ImageType >
+  typedef itk::Statistics::ImageToListSampleAdaptor< ImageType >
     ListSampleType ;
   
   ListSampleType::Pointer listSample = 

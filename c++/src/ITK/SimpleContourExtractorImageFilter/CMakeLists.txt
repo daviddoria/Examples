@@ -6,5 +6,4 @@ FIND_PACKAGE(ITK REQUIRED)
 INCLUDE(${ITK_USE_FILE})
 
 ADD_EXECUTABLE(SimpleContourExtractorImageFilter SimpleContourExtractorImageFilter.cxx)
-TARGET_LINK_LIBRARIES(SimpleContourExtractorImageFilter
-ITKBasicFilters ITKCommon ITKIO)
+TARGET_LINK_LIBRARIES(SimpleContourExtractorImageFilter ${ITK_LIBRARIES})
