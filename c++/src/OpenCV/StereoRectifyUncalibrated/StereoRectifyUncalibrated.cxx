@@ -1,16 +1,16 @@
-#include "opencv2/core/core.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/calib3d/calib3d.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
+#include <vector>
+#include <string>
 #include <fstream>
 #include <iostream>
-#include <sstream>
-#include <string>
 
 std::vector<cv::Point2f> ReadPoints(const std::string& filename);
 
-int main( int argc, char* argv[])
+int main(int argc, char* argv[])
 {
   // Verify arguments
   if(argc < 5)
@@ -45,9 +45,21 @@ int main( int argc, char* argv[])
     return -1;
     }
 
-  cv::Mat fundamentalMatrix = cv::findFundamentalMat(points1, points2, cv::FM_RANSAC, 3, 0.99);
 
-  std::cout << "F = " << fundamentalMatrix << std::endl;
+  //cv::Mat F = cv::findFundamentalMat(points1, points2, cv::FM_RANSAC, 3, 0.99);
+  cv::Mat F = cv::findFundamentalMat(points1, points2, CV_FM_8POINT);
+  
+  cv::Mat H1(4,4, image1.type());
+  cv::Mat H2(4,4, image1.type());
+  cv::stereoRectifyUncalibrated(points1, points2, F, image1.size(), H1, H2);
+  
+  cv::Mat rectified1(image1.size(), image1.type());
+  cv::warpPerspective(image1, rectified1, H1, image1.size());
+  cv::imwrite("rectified1.jpg", rectified1);
+  
+  cv::Mat rectified2(image2.size(), image2.type());
+  cv::warpPerspective(image2, rectified2, H2, image2.size());
+  cv::imwrite("rectified2.jpg", rectified2);
   
   return 0;
 }

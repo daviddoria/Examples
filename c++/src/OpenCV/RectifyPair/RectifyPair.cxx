@@ -3,111 +3,92 @@
 #include "opencv2/calib3d/calib3d.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
+#include <fstream>
 #include <iostream>
+#include <sstream>
 #include <string>
 
-using namespace cv;
-
-std::vector<Point3f> Create3DChessboardCorners(Size boardSize, float squareSize);
-
-struct Camera
-{
-  Mat CameraMatrix;
-  Mat ImagePoints;
-  Mat DistortionCoefficients;
-  Mat Image;
-};
-
-Camera CalibrateCamera(Mat image);
+std::vector<cv::Point2f> ReadPoints(const std::string& filename);
 
 int main( int argc, char* argv[])
 {
-  std::string image1FileName = argv[1];
-  std::string image2FileName = argv[2];
+  // Verify arguments
+  if(argc < 5)
+    {
+    std::cerr << "Required arguments: input1.jpg input2.jpg points1.txt points2.txt" << std::endl;
+    return -1;
+    }
 
-  Mat image1 = imread(image1FileName, 1);
-  Mat image2 = imread(image2FileName, 1);
+  // Parse arguments
+  std::string sourceImageFileName = argv[1];
+  std::string destinationImageFileName = argv[2];
+  std::string sourcePointsFileName = argv[3];
+  std::string destinationPointsFileName = argv[4];
 
-  Camera Camera1 = CalibrateCamera(image1);
-  Camera Camera2 = CalibrateCamera(image2);
+  // Output arguments
+  std::cout << "Source image: " << sourceImageFileName << std::endl
+            << "Destination image: " << destinationImageFileName << std::endl
+            << "Points1: " << sourcePointsFileName << std::endl
+            << "Points2: " << destinationPointsFileName << std::endl;
 
-  Mat H = findHomography(Camera1.ImagePoints, Camera2.ImagePoints);
+  // Read images
+  cv::Mat sourceImage = cv::imread(sourceImageFileName, CV_LOAD_IMAGE_COLOR);
+  cv::Mat destinationImage = cv::imread(destinationImageFileName, CV_LOAD_IMAGE_COLOR);
+/*
+  std::cout << "image1 has " << image1.channels() << " channels." << std::endl;
+  std::cout << "image1 has type " << image1.type() << std::endl;
+  std::cout << "image1 has " << image1.cols << " columns." << std::endl;
+  std::cout << "image1 has " << image1.rows << " rows." << std::endl;
+*/
+  // Read points
+  std::vector<cv::Point2f> sourcePoints = ReadPoints(sourcePointsFileName);
+  std::vector<cv::Point2f> destinationPoints = ReadPoints(destinationPointsFileName);
 
-  Mat map1;
-  Mat map2;
-  initUndistortRectifyMap(Camera1.CameraMatrix, Camera1.DistortionCoefficients, H, Camera2.CameraMatrix, Camera1.Image.size(), CV_32FC1, map1, map2);
+  if(sourcePoints.size() != destinationPoints.size())
+    {
+    std::cerr << "There must be the same number of points in both files (since they are correspondences!). Source poitns has " << sourcePoints.size() << " while destination poitns  has " << destinationPoints.size() << std::endl;
+    return -1;
+    }
 
-  Mat outputImage;
-  remap(Camera1.Image, outputImage, map1, map2, INTER_LINEAR);
+  // We really just want to pass the vectors 'points1' and 'points2', but the function expects a c-style array, so we pass the address of the first element
+  cv::Mat P = cv::getPerspectiveTransform(&sourcePoints[0], &destinationPoints[0]);
 
-  imwrite("output.jpg", outputImage);
+  std::cout << "P = " << P << std::endl;
 
+  cv::Mat rectified(sourceImage.size(), sourceImage.type());
+  cv::warpPerspective(sourceImage, rectified, P, sourceImage.size());
+  cv::imwrite("output.png", rectified);
+  
   return 0;
 }
 
-Camera CalibrateCamera(Mat image)
+std::vector<cv::Point2f> ReadPoints(const std::string& filename)
 {
-  Size boardSize(7,7); // the number of "inside corners" (where a black square meets a white square). This board is actually 8x8 squares
+  // Read points
+  std::ifstream pointsstream(filename.c_str());
 
-  float squareSize = 1.f; // This is "1 arbitrary unit"
-
-  Size imageSize = image.size();
-
-  // Find the chessboard corners
-  vector<vector<Point2f> > imagePoints(1);
-  bool found = findChessboardCorners(image, boardSize, imagePoints[0]);
-  if(!found)
+  if(pointsstream == NULL)
     {
-    std::cerr << "Could not find chess board!" << std::endl;
+    std::cout << "Cannot open file " << filename << std::endl;
     exit(-1);
     }
 
-  drawChessboardCorners(image, boardSize, Mat(imagePoints[0]), found );
+  // Read the point from the first image
+  std::string line;
+  std::vector<cv::Point2f> points;
 
-  std::vector<std::vector<Point3f> > objectPoints(1);
-  objectPoints[0] = Create3DChessboardCorners(boardSize, squareSize);
-
-  std::vector<Mat> rotationVectors;
-  std::vector<Mat> translationVectors;
-
-  Mat distortionCoefficients = Mat::zeros(8, 1, CV_64F); // There are 8 distortion coefficients
-  Mat cameraMatrix = Mat::eye(3, 3, CV_64F);
-
-  int flags = 0;
-  double rms = calibrateCamera(objectPoints, imagePoints, imageSize, cameraMatrix,
-                  distortionCoefficients, rotationVectors, translationVectors, flags|CV_CALIB_FIX_K4|CV_CALIB_FIX_K5);
-
-  //std::cout << "RMS: " << rms << std::endl;
-
-  //std::cout << "Camera matrix: " << cameraMatrix << std::endl;
-  //std::cout << "Distortion _coefficients: " << distortionCoefficients << std::endl;
-
-  //imshow("Image View", image);
-  //waitKey(0);
-
-  Camera camera;
-  camera.CameraMatrix = cameraMatrix;
-  camera.ImagePoints = Mat(imagePoints[0]);
-  camera.DistortionCoefficients = distortionCoefficients;
-  camera.Image = image;
-
-  return camera;
-}
-
-std::vector<Point3f> Create3DChessboardCorners(Size boardSize, float squareSize)
-{
-  // This function creates the 3D points of your chessboard in its own coordinate system
-
-  std::vector<Point3f> corners;
-
-  for( int i = 0; i < boardSize.height; i++ )
+  while(getline(pointsstream, line))
   {
-    for( int j = 0; j < boardSize.width; j++ )
+    if(points.size() == 4)
     {
-      corners.push_back(Point3f(float(j*squareSize),
-                                float(i*squareSize), 0));
+      return points;
     }
+    
+    std::stringstream ss(line);
+    float x,y;
+    ss >> x >> y;
+    points.push_back(cv::Point2f(x,y));
   }
 
-  return corners;
+  return points;
 }
