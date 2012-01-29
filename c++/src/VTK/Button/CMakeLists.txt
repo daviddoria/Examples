@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(Button)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(Button Button.cxx)
-TARGET_LINK_LIBRARIES(Button vtkHybrid)

@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(Planes)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(Planes Planes.cxx)
-TARGET_LINK_LIBRARIES(Planes vtkHybrid)

@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-PROJECT(Actor2D)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(Actor2D Actor2D.cxx)
-TARGET_LINK_LIBRARIES(Actor2D vtkHybrid)
-

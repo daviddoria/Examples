@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(ImageFilterMultipleInputsDifferentType)
-
-FIND_PACKAGE(ITK REQUIRED)
-INCLUDE(${ITK_USE_FILE})
-
-ADD_EXECUTABLE(ImageFilterMultipleInputsDifferentType ImageFilterMultipleInputsDifferentTypeExample.cxx)
-TARGET_LINK_LIBRARIES(ImageFilterMultipleInputsDifferentType ITKBasicFilters ITKIO ITKCommon)

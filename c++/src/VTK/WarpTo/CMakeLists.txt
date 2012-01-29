@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(WarpTo)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(WarpTo WarpTo.cxx)
-TARGET_LINK_LIBRARIES(WarpTo vtkHybrid)

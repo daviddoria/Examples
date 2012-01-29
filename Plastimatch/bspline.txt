@@ -1,0 +1,14 @@
+# command_file.txt
+[GLOBAL]
+fixed=fixed.png
+moving=moving.png
+img_out=warped.png
+xform_out=bspline_coefficients.txt
+
+[STAGE]
+xform=bspline
+impl=plastimatch
+threading=openmp
+max_its=30
+grid_spac=100 100 100
+res=4 4 2

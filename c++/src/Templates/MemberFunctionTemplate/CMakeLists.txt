@@ -1,3 +1,0 @@
-Project(MemberFunctionTemplate)
-
-ADD_EXECUTABLE(MemberFunctionTemplate MemberFunctionTemplate.cpp)

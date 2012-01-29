@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(Cursor2D)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(Cursor2D Cursor2D.cxx)
-TARGET_LINK_LIBRARIES(Cursor2D vtkHybrid vtkWidgets)

@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(NDArray)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(2DDoubleArray 2DDoubleArray.cxx)
-TARGET_LINK_LIBRARIES(2DDoubleArray vtkInfovis)

@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-PROJECT(Matrix)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(Matrix Matrix.cpp)
-TARGET_LINK_LIBRARIES(Matrix vtkHybrid)
-

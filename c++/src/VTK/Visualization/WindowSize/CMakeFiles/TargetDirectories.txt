@@ -1,1 +1,0 @@
-/media/portable/Examples/c++/src/VTK/Visualization/WindowSize/CMakeFiles/WindowSize.dir

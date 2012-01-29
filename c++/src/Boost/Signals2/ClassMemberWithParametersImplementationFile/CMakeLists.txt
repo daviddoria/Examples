@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-Project(ClassMemberWithParametersImplementationFile)
-
-ADD_EXECUTABLE(ClassMemberWithParametersImplementationFile ClassMemberWithParametersImplementationFile.cpp Form.cpp)

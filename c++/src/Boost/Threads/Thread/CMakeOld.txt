@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-Project(BoostThreads)
-
-ADD_EXECUTABLE(BoostThreads BoostThreads.cpp)
-TARGET_LINK_LIBRARIES(BoostThreads boost_thread-mt)

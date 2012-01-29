@@ -1,3 +1,0 @@
-Border:
-In Qt Designer, in the StyleSheet property of the groupbox, add:
-border: 2px solid gray;

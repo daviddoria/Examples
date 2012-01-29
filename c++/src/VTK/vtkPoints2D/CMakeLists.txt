@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-PROJECT(Points2D)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(Points2D Points2D.cxx)
-TARGET_LINK_LIBRARIES(Points2D vtkHybrid)
-

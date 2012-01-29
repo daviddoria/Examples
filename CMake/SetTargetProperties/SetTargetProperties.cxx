@@ -1,4 +1,13 @@
+#include <iostream>
+
 int main()
 {
-return 0;
+#ifdef INTERACTIVE
+  std::cout << "ifdef interactive" << std::endl;
+#endif
+  
+#if defined(INTERACTIVE)
+  std::cout << "if defined(interactive)" << std::endl;
+#endif
+  return 0;
 }

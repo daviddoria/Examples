@@ -1,3 +1,0 @@
-Project(MemberVariableClass)
-
-ADD_EXECUTABLE(MemberVariableClass MemberVariableClass.cpp)

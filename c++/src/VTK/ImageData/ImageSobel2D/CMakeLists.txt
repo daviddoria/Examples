@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-PROJECT(ImageSobel2D)
-
-FIND_PACKAGE(VTK REQUIRED)
-INCLUDE(${VTK_USE_FILE})
-
-ADD_EXECUTABLE(ImageSobel2D ImageSobel2D.cxx)
-TARGET_LINK_LIBRARIES(ImageSobel2D vtkHybrid)

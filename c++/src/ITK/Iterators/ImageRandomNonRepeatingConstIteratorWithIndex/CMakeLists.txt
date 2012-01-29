@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(ImageRandomNonRepeatingConstIteratorWithIndex)
-
-FIND_PACKAGE(ITK REQUIRED)
-INCLUDE(${ITK_USE_FILE})
-
-ADD_EXECUTABLE(ImageRandomNonRepeatingConstIteratorWithIndex ImageRandomNonRepeatingConstIteratorWithIndex.cxx)
-TARGET_LINK_LIBRARIES(ImageRandomNonRepeatingConstIteratorWithIndex ITKNumerics ITKBasicFilters ITKCommon ITKIO)

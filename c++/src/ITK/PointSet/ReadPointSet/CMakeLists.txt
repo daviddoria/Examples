@@ -1,9 +1,0 @@
-cmake_minimum_required(VERSION 2.6)
-
-PROJECT(ReadPointSet)
-
-FIND_PACKAGE(ITK REQUIRED)
-INCLUDE(${ITK_USE_FILE})
-
-ADD_EXECUTABLE(ReadPointSet ReadPointSet.cpp)
-TARGET_LINK_LIBRARIES(ReadPointSet ${ITK_LIBRARIES})
