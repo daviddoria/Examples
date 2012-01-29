@@ -1,0 +1,3 @@
+Project(ClassTemplateType)
+
+ADD_EXECUTABLE(ClassTemplateFunctionTemplate ClassTemplateFunctionTemplate.cpp)

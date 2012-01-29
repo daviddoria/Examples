@@ -1,0 +1,3 @@
+Project(ClassTemplateDerivedFromTemplatedTemplate)
+
+ADD_EXECUTABLE(ClassTemplateDerivedFromTemplatedTemplate ClassTemplateDerivedFromTemplatedTemplate.cpp)

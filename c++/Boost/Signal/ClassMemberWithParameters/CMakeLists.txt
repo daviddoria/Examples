@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.6)
+
+Project(SignalClassMemberWithParameters)
+
+ADD_EXECUTABLE(SignalClassMemberWithParameters ClassMemberWithParameters.cpp)
+TARGET_LINK_LIBRARIES(SignalClassMemberWithParameters boost_signals-mt)

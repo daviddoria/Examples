@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.6)
+Project(RGRL)
+
+FIND_PACKAGE(VXL REQUIRED)
+
+INCLUDE(${VXL_CMAKE_DIR}/UseVXL.cmake)
+INCLUDE_DIRECTORIES(${VXL_RPL_INCLUDE_DIR})
+
+ADD_EXECUTABLE(rigid rigid.cpp)
+TARGET_LINK_LIBRARIES(rigid
+vnl vgl rsdl rgrl
+)

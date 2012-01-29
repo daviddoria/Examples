@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+
+Project(FunctionTemplateExplicitInstantiation)
+
+ADD_EXECUTABLE(FunctionTemplateExplicitInstantiation FunctionTemplateExplicitInstantiation.cpp)

@@ -1,0 +1,1 @@
+/media/portable/Examples/c++/src/OpenCV/Basics/Matrix3Channel/build/CMakeFiles/Matrix3Channel.dir

@@ -1,0 +1,3 @@
+Project(ClassTemplateStaticMember)
+
+ADD_EXECUTABLE(ClassTemplateStaticMember ClassTemplateStaticMember.cpp)

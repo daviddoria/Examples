@@ -1,0 +1,5 @@
+dog
+cat
+ardvark
+rabbit
+kitten

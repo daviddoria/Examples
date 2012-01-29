@@ -1,0 +1,3 @@
+Project(ClassTemplateStaticFunction)
+
+ADD_EXECUTABLE(ClassTemplateStaticFunction ClassTemplateStaticFunction.cpp)

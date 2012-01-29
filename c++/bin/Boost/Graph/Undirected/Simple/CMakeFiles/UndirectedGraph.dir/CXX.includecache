@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/portable/ExamplesRepos/BGLExamples/Undirected/UndirectedGraph/UndirectedGraph.cpp
+boost/graph/graph_traits.hpp
+-
+boost/graph/undirected_graph.hpp
+-
+

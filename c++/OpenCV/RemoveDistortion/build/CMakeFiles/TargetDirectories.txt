@@ -1,0 +1,1 @@
+/media/portable/Examples/c++/src/OpenCV/RemoveDistortion/build/CMakeFiles/RemoveDistortion.dir

@@ -1,0 +1,2 @@
+/media/portable/Examples/CMake/VariableCaching/build/CMakeFiles/Executable1.dir
+/media/portable/Examples/CMake/VariableCaching/build/CMakeFiles/Executable2.dir

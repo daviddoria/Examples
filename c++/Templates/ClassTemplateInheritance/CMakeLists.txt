@@ -1,0 +1,3 @@
+Project(ClassTemplateInheritance)
+
+ADD_EXECUTABLE(ClassTemplateInheritance ClassTemplateInheritance.cpp)

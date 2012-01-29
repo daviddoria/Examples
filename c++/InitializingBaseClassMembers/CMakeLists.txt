@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(InitializingBaseClassMembers)
+ADD_EXECUTABLE(InitializingBaseClassMembers InitializingBaseClassMembers.cpp)

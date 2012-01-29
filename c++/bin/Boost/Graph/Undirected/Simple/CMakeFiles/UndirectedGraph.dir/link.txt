@@ -1,0 +1,1 @@
+/home/doriad/bin/c++   -g    CMakeFiles/UndirectedGraph.dir/UndirectedGraph.cpp.o  -o UndirectedGraph -rdynamic 

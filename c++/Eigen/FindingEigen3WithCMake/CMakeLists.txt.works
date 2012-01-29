@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(SparseMatrixSolver)
+
+include_directories(/media/portable/src/Eigen /media/portable/src/Eigen/unsupported)
+
+set(CMAKE_MODULE_PATH /media/portable/src/Eigen/cmake)
+
+FIND_PACKAGE(Umfpack REQUIRED)
+FIND_PACKAGE(BLAS REQUIRED)
+
+include_directories(${UMFPACK_INCLUDES})
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DEIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET")
+
+ADD_EXECUTABLE(SparseMatrixSolver SparseMatrixSolver.cpp )
+target_link_libraries(SparseMatrixSolver umfpack)
+
+ADD_EXECUTABLE(SparseLeastSquares SparseLeastSquares.cpp )
+target_link_libraries(SparseLeastSquares umfpack)
+
+#ADD_EXECUTABLE(BuiltIn BuiltIn.cpp )

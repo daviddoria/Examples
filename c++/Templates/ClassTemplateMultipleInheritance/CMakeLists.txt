@@ -1,0 +1,3 @@
+Project(ClassTemplateMultipleInheritance)
+
+ADD_EXECUTABLE(ClassTemplateMultipleInheritance ClassTemplateMultipleInheritance.cpp)

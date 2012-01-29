@@ -1,0 +1,3 @@
+Project(ClassTemplateMultipleParameters)
+
+ADD_EXECUTABLE(ClassTemplateMultipleParameters ClassTemplateMultipleParameters.cpp)

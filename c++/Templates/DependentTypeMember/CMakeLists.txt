@@ -1,0 +1,3 @@
+Project(DependentTypeMember)
+
+ADD_EXECUTABLE(DependentTypeMember DependentTypeMember.cpp)

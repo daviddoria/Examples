@@ -1,0 +1,122 @@
+#include <iostream>
+#include <fstream>
+#include <cstdlib> //for exit()
+#include <assert.h>
+
+
+//MUST BE IN THIS ORDER!!
+#define GL_GLEXT_PROTOTYPES
+#include <GL/glut.h>
+#include <GL/glext.h>
+
+#include <SDLHelpers/SDLHelpers.h>
+
+using namespace std;
+
+void LookAt();
+unsigned int width = 100, height = 100;
+
+void CheckErrors();
+
+int main(int argc, char *argv[])
+{
+	cout << "OpenGL" << endl;
+	
+
+	//Create handle to FBO
+	GLuint fbo;
+	glGenFramebuffersEXT(1, &fbo);
+	CheckErrors();
+
+	//bind FBO (what does this mean?)
+	glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, fbo);
+	CheckErrors();
+	
+	//create depth buffer for the FBO
+	GLuint depthbuffer;
+	glGenRenderbuffersEXT(1, &depthbuffer);
+	CheckErrors();
+	
+	//bind the renderbuffer
+	glBindRenderbufferEXT(GL_RENDERBUFFER_EXT, depthbuffer);
+	CheckErrors();
+	
+	//specify size of the depth buffer
+	glRenderbufferStorageEXT(GL_RENDERBUFFER_EXT, GL_DEPTH_COMPONENT, width, height);
+	CheckErrors();
+	
+	//attach the depth buffer to the frame buffer
+	glFramebufferRenderbufferEXT(GL_FRAMEBUFFER_EXT, GL_DEPTH_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, depthbuffer);
+	CheckErrors();
+	
+	//attach a texture to the FBO
+	//------------
+	//create a texture
+	GLuint img;
+	glGenTextures(1, &img);
+	glBindTexture(GL_TEXTURE_2D, img);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8,  width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+	CheckErrors();
+	
+	//attach the texture to the framebuffer
+	glFramebufferTexture2DEXT(GL_FRAMEBUFFER_EXT, GL_COLOR_ATTACHMENT0_EXT, GL_TEXTURE_2D, img, 0);
+	CheckErrors();
+	
+	//check that everything went ok
+	GLenum status = glCheckFramebufferStatusEXT(GL_FRAMEBUFFER_EXT);
+	
+	if(status != GL_FRAMEBUFFER_COMPLETE_EXT)
+	{
+		//it's not working!
+		cout << gluErrorString(status) << endl;
+	}
+
+	glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, fbo);
+	glPushAttrib(GL_VIEWPORT_BIT);
+	glViewport(0,0,width, height);
+	CheckErrors();
+
+	// Render as normal here
+	// output goes to the FBO and it’s attached buffers
+	LookAt();
+	DrawCube();
+	CheckErrors();
+	
+	float depths[width*height];
+	glReadBuffer(GL_COLOR_ATTACHMENT0_EXT);
+	glReadPixels(0, 0, width, height, GL_DEPTH_COMPONENT, GL_FLOAT, depths); //(x,y, width, height, format, type, *pixels)
+	WriteDepthFileVIL("buffer.jpg", depths);
+
+	CheckErrors();
+	
+	glPopAttrib();
+	glBindFramebufferEXT(GL_FRAMEBUFFER_EXT, 0);
+
+	//clean up
+	glDeleteFramebuffersEXT(1, &fbo);
+	glDeleteRenderbuffersEXT(1, &depthbuffer);
+
+	CheckErrors();
+
+	return 0;
+}
+
+void CheckErrors()
+{
+	GLenum error = glGetError();
+	cout << gluErrorString(error) << endl;
+}
+
+void LookAt()
+{
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(70, 1, 1, 100);
+	
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	
+	//gluLookAt(2, 2, 10, 2, 0, 0, 0, 1, 0);
+	gluLookAt(0, 0, 10, 0, 0, 0, 0, 1, 0);
+	
+}

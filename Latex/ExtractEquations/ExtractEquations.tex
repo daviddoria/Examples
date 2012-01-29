@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+
+\usepackage[active,displaymath,tightpage]{preview}
+%\PreviewEnvironment{equation, align}
+
+\begin{document}
+
+% Once the pdf is created with one equation on each page, use the following to convert each one to pngs:
+
+% gs -sDEVICE=png16m -dTextAlphaBits=4 -r300
+% -dGraphicsAlphaBits=4 -dSAFER -q -dNOPAUSE
+% -sOutputFile=<outputfile>%d.png <inputfile>.pdf -dBATCH
+
+% Then remove extra whitespace:
+% pdfcrop output.pdf
+
+\begin{equation*}
+\nabla^2 H = 0
+\end{equation*}
+
+
+\begin{equation*}
+\nabla^2 H = 1
+\end{equation*}
+
+\begin{equation*}
+\nabla^2 H = 3
+\end{equation*}
+
+\end{document}

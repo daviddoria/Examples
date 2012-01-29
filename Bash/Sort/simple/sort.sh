@@ -1,0 +1,1 @@
+sort input.txt > output.txt

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Assert)
+
+#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -UNDEBUG")
+# need to remove -DNDEBUG from CMAKE_CXX_FLAGS_RELEASE
+
+ADD_EXECUTABLE(Assert Assert.cpp)
