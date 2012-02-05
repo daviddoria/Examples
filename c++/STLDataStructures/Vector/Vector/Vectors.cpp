@@ -12,7 +12,6 @@ static void RemoveElement();
 static void TestResize();
 static void TestInsert();
 static void TestCopy();
-static void TestFind();
 static void ArrayStyleInit();
 static void Assign();
 static void TestMax();
@@ -27,7 +26,6 @@ int main(int, char*[])
   //TestResize();
   //TestInsert();
   //TestCopy();
-  //TestFind();
   //ArrayStyleInit();
   //Assign();
   //TestAppend();
@@ -94,30 +92,6 @@ void TestMax()
 void ArrayStyleInit()
 {
   //std::vector<int> vec({1,2,6,7,8,89}); //need -std=c++0x
-}
-
-void TestFind()
-{
-  std::vector<unsigned int> V(10);
-
-  for(unsigned int i = 0; i < 10; i++)
-  {
-    V[i] = 10*i;
-    std::cout << V[i]   << " ";
-  }
-
-  std::cout << std::endl;
-
-  std::vector<unsigned int>::iterator it = find(V.begin(), V.end(), 70);
-
-  if(it == V.end())
-  {
-      std::cout << "Could not find 70 in the vector"  << std::endl;
-  }
-  else
-  {
-    std::cout << "The number 70 is located at index " << it - V.begin() + 1 << std::endl; //should this have a +1?
-  }
 }
 
 void TestCopy()
