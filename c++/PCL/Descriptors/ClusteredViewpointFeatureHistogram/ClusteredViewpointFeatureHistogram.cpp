@@ -11,13 +11,20 @@ int main (int argc, char** argv)
   std::string fileName = argv[1];
   std::cout << "Reading " << fileName << std::endl;
 
-  pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+  typedef pcl::PointXYZ PointType;
+  pcl::PointCloud<PointType>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
+  
+  for(unsigned int i = 0; i < 121; ++i)
+    {
+    PointType p; p.x = drand48(); p.y = drand48(); p.z = drand48();
+    cloud->push_back(p);
+    }
 
-  if (pcl::io::loadPCDFile<pcl::PointXYZ> (fileName, *cloud) == -1) //* load the file
-  {
-    PCL_ERROR ("Couldn't read file");
-    return (-1);
-  }
+//   if (pcl::io::loadPCDFile<pcl::PointXYZ> (fileName, *cloud) == -1) //* load the file
+//   {
+//     PCL_ERROR ("Couldn't read file");
+//     return (-1);
+//   }
 
   std::cout << "Loaded " << cloud->points.size() << " points." << std::endl;
 

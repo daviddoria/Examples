@@ -6,10 +6,6 @@ class Parent
 
 };
 
-class Child : public Parent<int>
-{
-};
-
 template <typename TChild>
 class TypedChild : public Parent<TChild>
 {
@@ -17,10 +13,9 @@ class TypedChild : public Parent<TChild>
 
 int main(int argc, char* argv[])
 {
-  Parent<int> a;
-  Child b;
+  Parent<int> parent;
 
-  TypedChild<int> c;
-  
+  TypedChild<int> child;
+
   return 0;
 }

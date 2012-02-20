@@ -9,6 +9,8 @@ public:
   static void PointerToConst(const int* a){}
 
   static void ConstPointer(int* const a){}
+  
+  // static void ConstArray(int[] const a){} // Not a good way to pass an array as const. You can pass a const reference to the array, but it is dangerous and therefore not recommended. Just pass a pointer instead.
 };
 
 int main()

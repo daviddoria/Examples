@@ -10,3 +10,5 @@ include_directories(/media/portable/src/Eigen)
 # INCLUDE_DIRECTORIES(${EIGEN3_INCLUDE_DIR})
 
 ADD_EXECUTABLE(Matrix Matrix.cpp )
+
+ADD_EXECUTABLE(Identity Identity.cpp )

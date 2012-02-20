@@ -1,0 +1,3 @@
+Project(MemberFunctionTemplate)
+
+ADD_EXECUTABLE(MemberFunctionTemplateSpecialization MemberFunctionTemplateSpecialization.cpp)

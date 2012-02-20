@@ -8,17 +8,36 @@
 
 int main (int argc, char** argv)
 {
-  std::string fileName = argv[1];
-  std::cout << "Reading " << fileName << std::endl;
+  typedef pcl::PointXYZ InputPointType;
+  pcl::PointCloud<InputPointType>::Ptr cloud (new pcl::PointCloud<InputPointType>);
 
-  pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
-
-  if (pcl::io::loadPCDFile<pcl::PointXYZ> (fileName, *cloud) == -1) //* load the file
+  if(argc > 1)
   {
-    PCL_ERROR ("Couldn't read file");
-    return (-1);
+    // Read the point cloud from the first command line argument
+    std::string fileName = argv[1];
+    std::cout << "Reading " << fileName << std::endl;
+
+    if (pcl::io::loadPCDFile<pcl::PointXYZ> (fileName, *cloud) == -1) //* load the file
+    {
+      PCL_ERROR ("Couldn't read file");
+      return (-1);
+    }
+  }
+  else
+  {
+    // Create a point cloud
+    for(unsigned int i = 0; i < 1e4; ++i)
+      {
+      InputPointType p; 
+      // Random coordinate
+      p.x = drand48(); p.y = drand48(); p.z = drand48();
+
+      //std::cout << "p: " << p << std::endl;
+      cloud->push_back(p);
+      }
   }
 
+  
   std::cout << "Loaded " << cloud->points.size() << " points." << std::endl;
 
   // Compute the normals
@@ -32,6 +51,7 @@ int main (int argc, char** argv)
 
   normalEstimation.setRadiusSearch (0.03);
 
+  std::cout << "Computing normals..." << std::endl;
   normalEstimation.compute (*cloudWithNormals);
 
   // Setup the feature computation
@@ -48,9 +68,10 @@ int main (int argc, char** argv)
 
   pcl::PointCloud<pcl::PFHSignature125>::Ptr pfhFeatures(new pcl::PointCloud<pcl::PFHSignature125>);
 
-  pfhEstimation.setRadiusSearch (0.2);
+  pfhEstimation.setRadiusSearch (0.1);
 
-  // Actually compute the spin images
+  // Actually compute the features
+  std::cout << "Computing features..." << std::endl;
   pfhEstimation.compute (*pfhFeatures);
 
   std::cout << "output points.size (): " << pfhFeatures->points.size () << std::endl;

@@ -1,3 +1,4 @@
 Project(ClassTemplateInheritance)
 
-ADD_EXECUTABLE(ClassTemplateInheritance ClassTemplateInheritance.cpp)
+ADD_EXECUTABLE(NonTemplatedChildTemplatedParent NonTemplatedChildTemplatedParent.cpp)
+ADD_EXECUTABLE(TemplatedChildTemplatedParent TemplatedChildTemplatedParent.cpp)

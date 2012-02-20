@@ -11,13 +11,15 @@ std::string FindKeyByValue(std::map <std::string, int> MyMap, int value);
 int main(int argc, char *argv[])
 {
   // Create a map
-  std::map <std::string, int> MyMap;
+  typedef std::map <std::string, int> MapType;
+  MapType MyMap;
 
   // Create a mapping from "test" to 111
   MyMap["test"] = 111;
 
   // Create an iterator
-  std::map<std::string,int>::iterator iter;
+  //MapType::iterator iter; // This seems to work in this example, but typically you'd need const_iterator (shown below). (Sometimes there are "can't convert from const_iterator to iterator errors)
+  MapType::const_iterator iter;
 
   // Try to find "test"
   iter = MyMap.find("test");

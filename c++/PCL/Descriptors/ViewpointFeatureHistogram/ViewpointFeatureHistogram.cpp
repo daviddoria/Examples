@@ -37,7 +37,8 @@ int main (int argc, char** argv)
   std::cout << "Computed " << cloudWithNormals->points.size() << " normals." << std::endl;
   
   // Setup the feature computation
-  pcl::VFHEstimation<pcl::PointXYZ, pcl::Normal, pcl::VFHSignature308> vfhEstimation;
+  typedef pcl::VFHEstimation<pcl::PointXYZ, pcl::Normal, pcl::VFHSignature308> VFHEstimationType;
+  VFHEstimationType vfhEstimation;
 
   // Provide the original point cloud (without normals)
   vfhEstimation.setInputCloud (cloud);
@@ -58,6 +59,7 @@ int main (int argc, char** argv)
 
   // Display and retrieve the shape context descriptor vector for the 0th point.
   pcl::VFHSignature308 descriptor = vfhFeatures->points[0];
+  VFHEstimationType::PointCloudOut::PointType descriptor2 = vfhFeatures->points[0];
   std::cout << descriptor << std::endl;
 
   return 0;
