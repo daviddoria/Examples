@@ -1,11 +1,9 @@
 cmake_minimum_required(VERSION 2.6)
 
-Project(LexicalCast)
+project(LexicalCast)
 
-FIND_PACKAGE(Boost)
+find_package(Boost)
+include_directories(${Boost_INCLUDE_DIRS})
 
-LINK_DIRECTORIES(${LINK_DIRECTORIES} ${Boost_LIBRARY_DIRS})
-INCLUDE_DIRECTORIES(${INCLUDE_DIRECTORIES} ${Boost_INCLUDE_DIRS})
-
-ADD_EXECUTABLE(LexicalCast LexicalCast.cpp)
-
+add_executable( StringToValue StringToValue.cxx )
+add_executable( ValueToString ValueToString.cxx )
