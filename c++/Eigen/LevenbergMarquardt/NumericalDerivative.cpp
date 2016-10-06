@@ -3,52 +3,51 @@
 #include <Eigen/Dense>
 
 #include <unsupported/Eigen/NonLinearOptimization>
+#include <unsupported/Eigen/NumericalDiff>
 
-// LM minimize for sum_i (f_i(x))^2
-
+// Implement y = (x-5)^2
 struct MyFunctor
 {
-  int operator()(const Eigen::VectorXf &x, Eigen::VectorXf &fvec) const
-  {
-    // Implement y = (x-5)^2 (remember, operator() should return the value BEFORE it is squared.
-    fvec(0) = x(0) - 5.0;
-    return 0;
-  }
+    typedef float Scalar;
 
-  int df(const Eigen::VectorXf &x, Eigen::MatrixXf &fjac) const
-  {
-    Eigen::VectorXf epsilon(1);
-    epsilon(0) = 1e-5;
+    typedef Eigen::VectorXf InputType;
+    typedef Eigen::VectorXf ValueType;
+    typedef Eigen::Matrix<Scalar,Eigen::Dynamic,Eigen::Dynamic> JacobianType;
 
-    Eigen::VectorXf fvec1(1);
-    operator()(x + epsilon, fvec1);
-    Eigen::VectorXf fvec2(1);
-    operator()(x - epsilon, fvec2);
-    fjac = (fvec1 - fvec2)/2.0f;
-    return 0;
-  }
+    enum {
+        InputsAtCompileTime = Eigen::Dynamic,
+        ValuesAtCompileTime = Eigen::Dynamic
+    };
 
-  int inputs() const { return 1; }// inputs is the dimension of x.
-  int values() const { return 1; } // "values" is the number of f_i and 
+    int operator()(const Eigen::VectorXf &x, Eigen::VectorXf &fvec) const
+    {
+        // We provide f(x) = x-5 because the algorithm will square this value internally
+        fvec(0) = x(0) - 5.0;
+        return 0;
+    }
+
+    int inputs() const { return 1; }// inputs is the dimension of x.
+    int values() const { return 1; } // "values" is the number of f_i and
 };
-
 
 int main(int argc, char *argv[])
 {
-  Eigen::VectorXf x(1);
-  x(0) = 2;
-  std::cout << "x: " << x << std::endl;
+    Eigen::VectorXf x(1);
+    x(0) = 2;
+    std::cout << "x: " << x << std::endl;
 
-  MyFunctor functor;
-  Eigen::LevenbergMarquardt<MyFunctor, float> lm(functor);
+    MyFunctor myFunctor;
+    Eigen::NumericalDiff<MyFunctor> numericalDiffMyFunctor(myFunctor);
+    Eigen::LevenbergMarquardt<Eigen::NumericalDiff<MyFunctor>, float> levenbergMarquardt(numericalDiffMyFunctor);
 
-  lm.parameters.ftol = 1e-6;
-  lm.parameters.xtol = 1e-6;
-  lm.parameters.maxfev = 10; // Max iterations
-  
-  lm.minimize(x);
+    levenbergMarquardt.parameters.ftol = 1e-6;
+    levenbergMarquardt.parameters.xtol = 1e-6;
+    levenbergMarquardt.parameters.maxfev = 10; // Max iterations
 
-  std::cout << "x that minimizes the function: " << x << std::endl;
+    Eigen::VectorXf xmin = x; // initialize
+    levenbergMarquardt.minimize(xmin);
 
-  return 0;
+    std::cout << "x that minimizes the function: " << xmin << std::endl;
+
+    return 0;
 }
